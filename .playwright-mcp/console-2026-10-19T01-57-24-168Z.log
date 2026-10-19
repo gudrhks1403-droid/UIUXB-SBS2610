@@ -1,0 +1,42 @@
+[   45628ms] [INFO] Autofocus processing was blocked because a document already has a focused element. @ https://www.google.com/search?q=%EB%A7%88%EC%BC%93%EC%BB%AC%EB%A6%AC&oq=%EB%A7%88%EC%BC%93%EC%BB%AC%EB%A6%AC&gs_lcrp=EgZjaHJvbWUqDQgAEAAY4wIYsQMYgAQyDQgAEAAY4wIYsQMYgAQyEAgBEC4YxwEYsQMY0QMYgAQyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgAQyBwgIEAAYgAQyBwgJEAAYgATSAQgyOTQ2ajBqMqgCALACAA&sourceid=chrome&ie=UTF-8&sei=KXnVaojvFNPF1e8Py4D9IA:0
+[   47805ms] [LOG] 
+
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢀⡠⠶⠲⣷⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⡰⠋⠀⠀⢠⣿⡏⠀⠀⠀⠀⢀⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⡼⠁⠀⠀⠀⣾⡿⠀⠀⠀⣀⣴⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⢰⡇⠀⠀⠀⣸⣿⣃⣠⣴⠾⠋⠁⠀⢀⣶⡆⠀⠀⢰⣶⠀⠀⢀⣶⡆⣠⣶⣶⡄⢠⣿⡏⠀⢀⣶⡆⠀⠀⢰⣶⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠈⠳⠀⠀⢠⣿⡟⢻⣿⡀⠀⠀⠀⠀⣼⡿⠁⠀⢠⣿⡏⠀⠀⣼⣿⠟⠁⠈⠛⢀⣾⡿⠀⠀⣼⡿⠁⠀⢠⣿⡟⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⣿⡟⠀⠈⢿⣷⡀⠀⠀⢰⣿⠇⠀⢀⣾⡿⠀⠀⣰⣿⠇⠀⠀⠀⠀⣸⣿⠁⠀⣸⣿⠃⠀⢀⣾⣿⠁⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣼⣿⠃⠀⠀⠈⢿⣷⡀⠀⢻⣿⣀⡠⠺⣿⣇⡠⢴⣿⡏⠀⠀⠀⠀⠀⣿⣿⣀⠔⢻⣏⣀⡠⢺⣿⡇⠤⢤⡀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠙⠛⠀⠀⠀⠀⠈⠻⣷⣄⣀⣈⣁⠀⠀⠈⠁⠀⠀⠉⠀⠀⠀⠀⠀⠀⠈⠉⠀⠀⠀⠈⢉⣠⣾⡏⠀⠀⠀⠁⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡴⠋⣸⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠎⠀⣰⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠶⠾⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+     %c🚀 Kurly Careers
+    %chttps://kurly.career.greetinghr.com/
+
+
+
+
+
+
+ color: #a864d8; font-weight: bold; font-size: 14px; font-size: 12px; @ https://res.kurly.com/dist/kurlymall-nx/_next/static/chunks/main-181010d1a6d1fe81.js:4
+[   48256ms] [LOG] Service Worker registration successful with scope:  https://www.kurly.com/ @ https://res.kurly.com/dist/kurlymall-nx/_next/static/chunks/main-181010d1a6d1fe81.js:4
+[   48856ms] [WARNING] [Meta Pixel] - Invalid parameter format for currency. Please refer https://developers.facebook.com/docs/meta-pixel/reference/ for valid parameter specifications. @ https://res.kurly.com/dist/kurlymall-nx/_next/static/chunks/main-181010d1a6d1fe81.js:4
+[ 1791308ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://api.kurly.com/member/proxy/member-main/v1/member/metadata:0
+[ 1791309ms] [LOG] AxiosError: Request failed with status code 401
+    at am (https://res.kurly.com/dist/kurly-event-container/_next/static/chunks/pages/_app-eadabd1ca5af7c3d.js:109:1249)
+    at XMLHttpRequest.g (https://res.kurly.com/dist/kurly-event-container/_next/static/chunks/pages/_app-eadabd1ca5af7c3d.js:109:5625) @ https://res.kurly.com/dist/kurly-event-container/_next/static/chunks/b2bcface-a25e0ebe09d47b72.js:0
