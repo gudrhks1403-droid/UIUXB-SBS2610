@@ -1,0 +1,9 @@
+.top-banner {
+    height: 42px;
+    background-color: #5f0080;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}

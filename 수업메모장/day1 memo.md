@@ -95,3 +95,50 @@ GitHub를 이용하면 메일로 파일을 따로 옮기지 않아도 다른 컴
 로컬 저장소와 원격 저장소의 차이 복습
 
 GitHub에 파일을 업로드하고 다른 컴퓨터에서 확인하는 과정 복습
+
+###### 8. 오늘 설치한 에이전트 목록
+
+에이전트란? 터미널에서 말(명령)로 시키면 파일 수정, 명령어 실행, 브라우저 조작 같은 작업을 대신 해주는 AI 도구
+
+도구          ㅣ 만든 곳     ㅣ 버전      ㅣ 한 줄 설명
+
+Codex         ㅣ OpenAI      ㅣ 0.163.0   ㅣ 터미널에서 쓰는 ChatGPT 코딩 에이전트
+
+Claude Code   ㅣ Anthropic   ㅣ 2.1.303   ㅣ 터미널·VS코드에서 쓰는 Claude 코딩 에이전트
+
+Playwright MCP ㅣ Microsoft  ㅣ 최신(@latest) ㅣ 에이전트가 브라우저를 직접 열고 조작하게 해주는 연결 도구
+
+
+에이전트 1. Codex
+
+설명: OpenAI에서 만든 AI 코딩 도우미. 터미널에서 실행하면 코드 작성, 수정, 질문 답변을 해줌
+
+설치: npm install -g @openai/codex
+
+버전 확인: codex --version
+
+실행: codex
+
+삭제: npm uninstall -g @openai/codex
+
+
+에이전트 2. Claude Code
+
+설명: Anthropic에서 만든 AI 코딩 도우미. 내 프로젝트 파일을 읽고 수정하고, 터미널 명령어도 대신 실행해줌
+
+버전 확인: claude --version
+
+실행: claude
+
+오늘 한 일: lang="ko" 변경, 마켓컬리 수치 분석, winget 목록 확인, 학습 기록 정리
+
+
+에이전트 3. Playwright MCP
+
+설명: 에이전트에게 "브라우저 손"을 달아주는 도구. 에이전트가 브라우저를 열고 페이지를 읽거나 클릭할 수 있게 해줌
+
+MCP란? AI 에이전트와 다른 프로그램(브라우저, 노션 등)을 연결해주는 규칙 (USB 같은 연결 단자 역할)
+
+설치(설정): npx @playwright/mcp@latest 로 Codex와 Claude Code에 연결
+
+오늘 한 일: 마켓컬리 페이지에서 띠배너·유틸 메뉴의 높이, 색상, 글자 크기를 직접 측정

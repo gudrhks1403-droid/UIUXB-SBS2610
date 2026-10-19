@@ -1,0 +1,4 @@
+- generic [ref=e3]:
+  - link "지금 가입하고 최대 1만 2천원 할인 쿠폰 받아가세요!" [ref=e4] [cursor=pointer]:
+    - /url: https://event.kurly.com/lego/event/2023/0911/join/coupon#lc112b1
+  - button "배너 하루 안보기" [ref=e5] [cursor=pointer]
