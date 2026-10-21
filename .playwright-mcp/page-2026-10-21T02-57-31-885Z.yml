@@ -1,0 +1,359 @@
+- generic [active] [ref=f16e1]:
+  - generic [ref=f16e3]:
+    - generic [ref=f16e4]:
+      - generic [ref=f16e5]:
+        - generic [ref=f16e6]:
+          - generic [ref=f16e7]: ‌
+          - generic [ref=f16e11]: 고객센터
+        - generic [ref=f16e14]:
+          - generic [ref=f16e15]:
+            - link [ref=f16e16] [cursor=pointer]:
+              - /url: /main
+            - button "마켓컬리" [ref=f16e21] [cursor=pointer]
+            - button "뷰티컬리" [ref=f16e22] [cursor=pointer]
+          - generic [ref=f16e24]:
+            - textbox "검색어를 입력해주세요" [ref=f16e25]: 항공직송 노르웨이 생연어
+            - button "delete-search-keyword" [ref=f16e26] [cursor=pointer]
+            - button "submit" [ref=f16e27] [cursor=pointer]
+          - generic [ref=f16e28]:
+            - button [ref=f16e29] [cursor=pointer]
+            - button [ref=f16e33] [cursor=pointer]
+      - generic [ref=f16e37]:
+        - button "카테고리" [ref=f16e39] [cursor=pointer]
+        - generic [ref=f16e43]:
+          - list [ref=f16e44]:
+            - generic [ref=f16e45]: ‌
+            - generic [ref=f16e47]: ‌
+            - generic [ref=f16e49]: ‌
+            - generic [ref=f16e51]: ‌
+            - generic [ref=f16e53]: ‌
+          - generic [ref=f16e55]:
+            - generic [ref=f16e56]:
+              - textbox "검색어를 입력해주세요." [ref=f16e57]: 항공직송 노르웨이 생연어
+              - button [ref=f16e58] [cursor=pointer]
+              - button [ref=f16e62] [cursor=pointer]
+            - generic [ref=f16e65]:
+              - button [ref=f16e66] [cursor=pointer]
+              - button [ref=f16e70] [cursor=pointer]
+              - button "0" [ref=f16e73] [cursor=pointer]
+    - generic [ref=f16e81]:
+      - generic [ref=f16e82]: ‌
+      - generic [ref=f16e86]:
+        - generic [ref=f16e87]: ‌
+        - generic [ref=f16e90]: ‌
+      - generic [ref=f16e93]:
+        - generic [ref=f16e94]:
+          - generic [ref=f16e95]:
+            - generic [ref=f16e96]: 필터
+            - button "초기화" [ref=f16e97] [cursor=pointer]
+          - generic [ref=f16e102]:
+            - generic [ref=f16e103]: ‌
+            - generic [ref=f16e109]:
+              - generic [ref=f16e111] [cursor=pointer]:
+                - checkbox [disabled] [ref=f16e112]
+                - paragraph
+              - generic [ref=f16e114]: ‌
+            - generic [ref=f16e117]:
+              - generic [ref=f16e119] [cursor=pointer]:
+                - checkbox [disabled] [ref=f16e120]
+                - paragraph
+              - generic [ref=f16e122]: ‌
+            - generic [ref=f16e125]:
+              - generic [ref=f16e127] [cursor=pointer]:
+                - checkbox [disabled] [ref=f16e128]
+                - paragraph
+              - generic [ref=f16e130]: ‌
+            - generic [ref=f16e133]:
+              - generic [ref=f16e135] [cursor=pointer]:
+                - checkbox [disabled] [ref=f16e136]
+                - paragraph
+              - generic [ref=f16e138]: ‌
+            - generic [ref=f16e141]:
+              - generic [ref=f16e143] [cursor=pointer]:
+                - checkbox [disabled] [ref=f16e144]
+                - paragraph
+              - generic [ref=f16e146]: ‌
+            - generic [ref=f16e149]:
+              - generic [ref=f16e151] [cursor=pointer]:
+                - checkbox [disabled] [ref=f16e152]
+                - paragraph
+              - generic [ref=f16e154]: ‌
+            - generic [ref=f16e157]:
+              - generic [ref=f16e159] [cursor=pointer]:
+                - checkbox [disabled] [ref=f16e160]
+                - paragraph
+              - generic [ref=f16e162]: ‌
+            - generic [ref=f16e165]:
+              - generic [ref=f16e167] [cursor=pointer]:
+                - checkbox [disabled] [ref=f16e168]
+                - paragraph
+              - generic [ref=f16e170]: ‌
+            - generic [ref=f16e173]:
+              - generic [ref=f16e175] [cursor=pointer]:
+                - checkbox [disabled] [ref=f16e176]
+                - paragraph
+              - generic [ref=f16e178]: ‌
+            - generic [ref=f16e181]:
+              - generic [ref=f16e183] [cursor=pointer]:
+                - checkbox [disabled] [ref=f16e184]
+                - paragraph
+              - generic [ref=f16e186]: ‌
+          - generic [ref=f16e189]:
+            - generic [ref=f16e190]: ‌
+            - generic [ref=f16e196]:
+              - generic [ref=f16e198] [cursor=pointer]:
+                - checkbox [disabled] [ref=f16e199]
+                - paragraph
+              - generic [ref=f16e201]: ‌
+            - generic [ref=f16e204]:
+              - generic [ref=f16e206] [cursor=pointer]:
+                - checkbox [disabled] [ref=f16e207]
+                - paragraph
+              - generic [ref=f16e209]: ‌
+            - generic [ref=f16e212]:
+              - generic [ref=f16e214] [cursor=pointer]:
+                - checkbox [disabled] [ref=f16e215]
+                - paragraph
+              - generic [ref=f16e217]: ‌
+            - generic [ref=f16e220]:
+              - generic [ref=f16e222] [cursor=pointer]:
+                - checkbox [disabled] [ref=f16e223]
+                - paragraph
+              - generic [ref=f16e225]: ‌
+            - generic [ref=f16e228]:
+              - generic [ref=f16e230] [cursor=pointer]:
+                - checkbox [disabled] [ref=f16e231]
+                - paragraph
+              - generic [ref=f16e233]: ‌
+            - generic [ref=f16e236]:
+              - generic [ref=f16e238] [cursor=pointer]:
+                - checkbox [disabled] [ref=f16e239]
+                - paragraph
+              - generic [ref=f16e241]: ‌
+            - generic [ref=f16e244]:
+              - generic [ref=f16e246] [cursor=pointer]:
+                - checkbox [disabled] [ref=f16e247]
+                - paragraph
+              - generic [ref=f16e249]: ‌
+            - generic [ref=f16e252]:
+              - generic [ref=f16e254] [cursor=pointer]:
+                - checkbox [disabled] [ref=f16e255]
+                - paragraph
+              - generic [ref=f16e257]: ‌
+            - generic [ref=f16e260]:
+              - generic [ref=f16e262] [cursor=pointer]:
+                - checkbox [disabled] [ref=f16e263]
+                - paragraph
+              - generic [ref=f16e265]: ‌
+            - generic [ref=f16e268]:
+              - generic [ref=f16e270] [cursor=pointer]:
+                - checkbox [disabled] [ref=f16e271]
+                - paragraph
+              - generic [ref=f16e273]: ‌
+          - generic [ref=f16e276]:
+            - generic [ref=f16e277]: ‌
+            - generic [ref=f16e283]:
+              - generic [ref=f16e285] [cursor=pointer]:
+                - checkbox [disabled] [ref=f16e286]
+                - paragraph
+              - generic [ref=f16e288]: ‌
+            - generic [ref=f16e291]:
+              - generic [ref=f16e293] [cursor=pointer]:
+                - checkbox [disabled] [ref=f16e294]
+                - paragraph
+              - generic [ref=f16e296]: ‌
+            - generic [ref=f16e299]:
+              - generic [ref=f16e301] [cursor=pointer]:
+                - checkbox [disabled] [ref=f16e302]
+                - paragraph
+              - generic [ref=f16e304]: ‌
+            - generic [ref=f16e307]:
+              - generic [ref=f16e309] [cursor=pointer]:
+                - checkbox [disabled] [ref=f16e310]
+                - paragraph
+              - generic [ref=f16e312]: ‌
+            - generic [ref=f16e315]:
+              - generic [ref=f16e317] [cursor=pointer]:
+                - checkbox [disabled] [ref=f16e318]
+                - paragraph
+              - generic [ref=f16e320]: ‌
+            - generic [ref=f16e323]:
+              - generic [ref=f16e325] [cursor=pointer]:
+                - checkbox [disabled] [ref=f16e326]
+                - paragraph
+              - generic [ref=f16e328]: ‌
+            - generic [ref=f16e331]:
+              - generic [ref=f16e333] [cursor=pointer]:
+                - checkbox [disabled] [ref=f16e334]
+                - paragraph
+              - generic [ref=f16e336]: ‌
+            - generic [ref=f16e339]:
+              - generic [ref=f16e341] [cursor=pointer]:
+                - checkbox [disabled] [ref=f16e342]
+                - paragraph
+              - generic [ref=f16e344]: ‌
+            - generic [ref=f16e347]:
+              - generic [ref=f16e349] [cursor=pointer]:
+                - checkbox [disabled] [ref=f16e350]
+                - paragraph
+              - generic [ref=f16e352]: ‌
+            - generic [ref=f16e355]:
+              - generic [ref=f16e357] [cursor=pointer]:
+                - checkbox [disabled] [ref=f16e358]
+                - paragraph
+              - generic [ref=f16e360]: ‌
+        - generic [ref=f16e364]:
+          - generic [ref=f16e365]:
+            - generic [ref=f16e366]:
+              - generic [ref=f16e367]: ‌
+              - generic [ref=f16e370]:
+                - generic [ref=f16e371]: ‌
+                - generic [ref=f16e375]: ‌
+                - generic [ref=f16e379]: ‌
+                - generic [ref=f16e383]: ‌
+            - generic [ref=f16e387]:
+              - generic [ref=f16e388]: ‌
+              - generic [ref=f16e391]:
+                - generic [ref=f16e392]: ‌
+                - generic [ref=f16e396]: ‌
+                - generic [ref=f16e400]: ‌
+                - generic [ref=f16e404]: ‌
+            - generic [ref=f16e408]:
+              - generic [ref=f16e409]: ‌
+              - generic [ref=f16e412]:
+                - generic [ref=f16e413]: ‌
+                - generic [ref=f16e417]: ‌
+                - generic [ref=f16e421]: ‌
+                - generic [ref=f16e425]: ‌
+          - generic [ref=f16e429]:
+            - generic [ref=f16e430]:
+              - generic [ref=f16e431]: ‌
+              - generic [ref=f16e434]:
+                - generic [ref=f16e435]: ‌
+                - generic [ref=f16e439]: ‌
+                - generic [ref=f16e443]: ‌
+                - generic [ref=f16e447]: ‌
+            - generic [ref=f16e451]:
+              - generic [ref=f16e452]: ‌
+              - generic [ref=f16e455]:
+                - generic [ref=f16e456]: ‌
+                - generic [ref=f16e460]: ‌
+                - generic [ref=f16e464]: ‌
+                - generic [ref=f16e468]: ‌
+            - generic [ref=f16e472]:
+              - generic [ref=f16e473]: ‌
+              - generic [ref=f16e476]:
+                - generic [ref=f16e477]: ‌
+                - generic [ref=f16e481]: ‌
+                - generic [ref=f16e485]: ‌
+                - generic [ref=f16e489]: ‌
+          - generic [ref=f16e493]:
+            - generic [ref=f16e494]:
+              - generic [ref=f16e495]: ‌
+              - generic [ref=f16e498]:
+                - generic [ref=f16e499]: ‌
+                - generic [ref=f16e503]: ‌
+                - generic [ref=f16e507]: ‌
+                - generic [ref=f16e511]: ‌
+            - generic [ref=f16e515]:
+              - generic [ref=f16e516]: ‌
+              - generic [ref=f16e519]:
+                - generic [ref=f16e520]: ‌
+                - generic [ref=f16e524]: ‌
+                - generic [ref=f16e528]: ‌
+                - generic [ref=f16e532]: ‌
+            - generic [ref=f16e536]:
+              - generic [ref=f16e537]: ‌
+              - generic [ref=f16e540]:
+                - generic [ref=f16e541]: ‌
+                - generic [ref=f16e545]: ‌
+                - generic [ref=f16e549]: ‌
+                - generic [ref=f16e553]: ‌
+    - button "맨 위로 이동" [ref=f16e558] [cursor=pointer]
+    - generic [ref=f16e560]:
+      - generic [ref=f16e561]:
+        - generic [ref=f16e562]:
+          - generic [ref=f16e563]:
+            - paragraph [ref=f16e564]: 고객행복센터
+            - strong [ref=f16e565]: 1644-1107월~토요일 오전 7시 - 오후 6시
+            - generic [ref=f16e566]:
+              - generic [ref=f16e567]:
+                - button "카카오톡 문의" [ref=f16e568] [cursor=pointer]
+                - generic [ref=f16e569]: 월~토요일오전 7시 - 오후 6시일/공휴일오전 7시 - 오후 1시
+              - generic [ref=f16e572]:
+                - button "1:1 문의" [ref=f16e573] [cursor=pointer]
+                - generic [ref=f16e574]: 365일고객센터 운영시간에 순차적으로 답변드리겠습니다.
+              - generic [ref=f16e575]:
+                - link "대량주문 문의" [ref=f16e576] [cursor=pointer]:
+                  - /url: https://docs.google.com/forms/d/e/1FAIpQLScWcjRuN6eWJK-G8x3NwBfE8IyKZIOq7jhD3fUXuKSWwPqzJw/viewform
+                - generic [ref=f16e577]: 월~금요일오전 9시 - 오후 6시점심시간낮 12시 - 오후 1시
+            - generic [ref=f16e580]:
+              - text: "비회원 문의 :"
+              - link "help@kurlycorp.com" [ref=f16e581] [cursor=pointer]:
+                - /url: mailto:help@kurlycorp.com
+          - generic [ref=f16e582]:
+            - list [ref=f16e583]:
+              - listitem [ref=f16e584]:
+                - link "회사소개" [ref=f16e585] [cursor=pointer]:
+                  - /url: https://newsroom.kurlycorp.com/
+              - listitem [ref=f16e586]:
+                - link "컬리소개영상" [ref=f16e587] [cursor=pointer]:
+                  - /url: https://www.youtube.com/embed/WEep7BcboMQ?rel=0&showinfo=0&wmode=opaque&enablejsapi=1
+              - listitem [ref=f16e588]:
+                - link "투자정보" [ref=f16e589] [cursor=pointer]:
+                  - /url: https://newsroom.kurlycorp.com/ir/%ec%9e%ac%eb%ac%b4%ec%a0%95%eb%b3%b4/
+              - listitem [ref=f16e590]:
+                - link "인재채용" [ref=f16e591] [cursor=pointer]:
+                  - /url: https://kurly.career.greetinghr.com
+              - listitem [ref=f16e592]:
+                - link "이용약관" [ref=f16e593] [cursor=pointer]:
+                  - /url: /user-terms/agreement
+              - listitem [ref=f16e594]:
+                - link "개인정보처리방침" [ref=f16e595] [cursor=pointer]:
+                  - /url: https://privacy.kurly.com/kurly/privacypolicy
+              - listitem [ref=f16e596]:
+                - link "이용안내" [ref=f16e597] [cursor=pointer]:
+                  - /url: /user-guide
+              - listitem [ref=f16e598]:
+                - link "입점신청" [ref=f16e599] [cursor=pointer]:
+                  - /url: https://docs.google.com/forms/d/e/1FAIpQLScKI_Kd1lQAp68r-SIhiOWj0J43C99IvNbgFeT7-X9YLIqteA/viewform?usp=dialog
+            - generic [ref=f16e600]:
+              - text: "법인명 (상호) : 주식회사 컬리"
+              - generic [ref=f16e601]: "|"
+              - text: "사업자등록번호 : 261-81-23567"
+              - link "사업자정보 확인" [ref=f16e602] [cursor=pointer]:
+                - /url: https://www.ftc.go.kr/bizCommPop.do?wrkr_no=2618123567&apv_perm_no=
+              - text: "통신판매업 : 제 2018-서울강남-01646 호주소 : 서울특별시 강남구 테헤란로 133, 18층(역삼동)"
+              - generic [ref=f16e603]: "|"
+              - text: "대표이사 : 김슬아채용문의 :"
+              - link "recruit@kurlycorp.com" [ref=f16e604] [cursor=pointer]:
+                - /url: mailto:recruit@kurlycorp.com
+              - text: "팩스: 070 - 7500 - 6098"
+            - list [ref=f16e605]:
+              - listitem [ref=f16e606]:
+                - link [ref=f16e607] [cursor=pointer]:
+                  - /url: https://instagram.com/marketkurly
+                  - img "컬리 인스타그램 바로가기" [ref=f16e608]
+              - listitem [ref=f16e609]:
+                - link [ref=f16e610] [cursor=pointer]:
+                  - /url: https://www.facebook.com/marketkurly
+                  - img "컬리 페이스북 바로가기" [ref=f16e611]
+              - listitem [ref=f16e612]:
+                - link [ref=f16e613] [cursor=pointer]:
+                  - /url: https://blog.naver.com/marketkurly
+                  - img "컬리 네이버블로그 바로가기" [ref=f16e614]
+              - listitem [ref=f16e615]:
+                - link [ref=f16e616] [cursor=pointer]:
+                  - /url: https://www.youtube.com/channel/UCfpdjL5pl-1qKT7Xp4UQzQg
+                  - img "컬리 유튜브 바로가기" [ref=f16e617]
+        - generic [ref=f16e618]:
+          - button [ref=f16e619] [cursor=pointer]:
+            - img "isms 로고" [ref=f16e620]
+            - paragraph [ref=f16e621]: "[인증범위] 컬리 쇼핑몰 서비스 개발·운영(심사받지 않은 물리적 인프라 제외)[유효기간] 2025.01.15 ~ 2028.01.14"
+          - button [ref=f16e622] [cursor=pointer]:
+            - img "우리은행 로고" [ref=f16e623]
+            - paragraph [ref=f16e624]: 고객님이 현금으로 결제한 금액에 대해 우리은행과채무지급보증 계약을 체결하여 안전거래를 보장하고있습니다.
+      - generic [ref=f16e625]:
+        - text: 컬리에서 판매되는 상품 중에는 컬리에 입점한 개별 판매자가 판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다.마켓플레이스(오픈마켓) 상품의 경우 컬리는 통신판매중개자로서 통신판매의 당사자가 아닙니다. 컬리는 해당 상품의 주문, 품질, 교환/환불 등 의무와 책임을 부담하지 않습니다.
+        - emphasis [ref=f16e626]: © KURLY CORP. ALL RIGHTS RESERVED
+  - alert [ref=f16e627]

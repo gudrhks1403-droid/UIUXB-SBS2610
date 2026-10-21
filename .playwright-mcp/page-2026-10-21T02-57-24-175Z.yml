@@ -1,0 +1,359 @@
+- generic [active] [ref=f8e1]:
+  - generic [ref=f8e3]:
+    - generic [ref=f8e4]:
+      - generic [ref=f8e5]:
+        - generic [ref=f8e6]:
+          - generic [ref=f8e7]: ‌
+          - generic [ref=f8e11]: 고객센터
+        - generic [ref=f8e14]:
+          - generic [ref=f8e15]:
+            - link [ref=f8e16] [cursor=pointer]:
+              - /url: /main
+            - button "마켓컬리" [ref=f8e21] [cursor=pointer]
+            - button "뷰티컬리" [ref=f8e22] [cursor=pointer]
+          - generic [ref=f8e24]:
+            - textbox "검색어를 입력해주세요" [ref=f8e25]: 스위티오 바나나
+            - button "delete-search-keyword" [ref=f8e26] [cursor=pointer]
+            - button "submit" [ref=f8e27] [cursor=pointer]
+          - generic [ref=f8e28]:
+            - button [ref=f8e29] [cursor=pointer]
+            - button [ref=f8e33] [cursor=pointer]
+      - generic [ref=f8e37]:
+        - button "카테고리" [ref=f8e39] [cursor=pointer]
+        - generic [ref=f8e43]:
+          - list [ref=f8e44]:
+            - generic [ref=f8e45]: ‌
+            - generic [ref=f8e47]: ‌
+            - generic [ref=f8e49]: ‌
+            - generic [ref=f8e51]: ‌
+            - generic [ref=f8e53]: ‌
+          - generic [ref=f8e55]:
+            - generic [ref=f8e56]:
+              - textbox "검색어를 입력해주세요." [ref=f8e57]: 스위티오 바나나
+              - button [ref=f8e58] [cursor=pointer]
+              - button [ref=f8e62] [cursor=pointer]
+            - generic [ref=f8e65]:
+              - button [ref=f8e66] [cursor=pointer]
+              - button [ref=f8e70] [cursor=pointer]
+              - button "0" [ref=f8e73] [cursor=pointer]
+    - generic [ref=f8e81]:
+      - generic [ref=f8e82]: ‌
+      - generic [ref=f8e86]:
+        - generic [ref=f8e87]: ‌
+        - generic [ref=f8e90]: ‌
+      - generic [ref=f8e93]:
+        - generic [ref=f8e94]:
+          - generic [ref=f8e95]:
+            - generic [ref=f8e96]: 필터
+            - button "초기화" [ref=f8e97] [cursor=pointer]
+          - generic [ref=f8e102]:
+            - generic [ref=f8e103]: ‌
+            - generic [ref=f8e109]:
+              - generic [ref=f8e111] [cursor=pointer]:
+                - checkbox [disabled] [ref=f8e112]
+                - paragraph
+              - generic [ref=f8e114]: ‌
+            - generic [ref=f8e117]:
+              - generic [ref=f8e119] [cursor=pointer]:
+                - checkbox [disabled] [ref=f8e120]
+                - paragraph
+              - generic [ref=f8e122]: ‌
+            - generic [ref=f8e125]:
+              - generic [ref=f8e127] [cursor=pointer]:
+                - checkbox [disabled] [ref=f8e128]
+                - paragraph
+              - generic [ref=f8e130]: ‌
+            - generic [ref=f8e133]:
+              - generic [ref=f8e135] [cursor=pointer]:
+                - checkbox [disabled] [ref=f8e136]
+                - paragraph
+              - generic [ref=f8e138]: ‌
+            - generic [ref=f8e141]:
+              - generic [ref=f8e143] [cursor=pointer]:
+                - checkbox [disabled] [ref=f8e144]
+                - paragraph
+              - generic [ref=f8e146]: ‌
+            - generic [ref=f8e149]:
+              - generic [ref=f8e151] [cursor=pointer]:
+                - checkbox [disabled] [ref=f8e152]
+                - paragraph
+              - generic [ref=f8e154]: ‌
+            - generic [ref=f8e157]:
+              - generic [ref=f8e159] [cursor=pointer]:
+                - checkbox [disabled] [ref=f8e160]
+                - paragraph
+              - generic [ref=f8e162]: ‌
+            - generic [ref=f8e165]:
+              - generic [ref=f8e167] [cursor=pointer]:
+                - checkbox [disabled] [ref=f8e168]
+                - paragraph
+              - generic [ref=f8e170]: ‌
+            - generic [ref=f8e173]:
+              - generic [ref=f8e175] [cursor=pointer]:
+                - checkbox [disabled] [ref=f8e176]
+                - paragraph
+              - generic [ref=f8e178]: ‌
+            - generic [ref=f8e181]:
+              - generic [ref=f8e183] [cursor=pointer]:
+                - checkbox [disabled] [ref=f8e184]
+                - paragraph
+              - generic [ref=f8e186]: ‌
+          - generic [ref=f8e189]:
+            - generic [ref=f8e190]: ‌
+            - generic [ref=f8e196]:
+              - generic [ref=f8e198] [cursor=pointer]:
+                - checkbox [disabled] [ref=f8e199]
+                - paragraph
+              - generic [ref=f8e201]: ‌
+            - generic [ref=f8e204]:
+              - generic [ref=f8e206] [cursor=pointer]:
+                - checkbox [disabled] [ref=f8e207]
+                - paragraph
+              - generic [ref=f8e209]: ‌
+            - generic [ref=f8e212]:
+              - generic [ref=f8e214] [cursor=pointer]:
+                - checkbox [disabled] [ref=f8e215]
+                - paragraph
+              - generic [ref=f8e217]: ‌
+            - generic [ref=f8e220]:
+              - generic [ref=f8e222] [cursor=pointer]:
+                - checkbox [disabled] [ref=f8e223]
+                - paragraph
+              - generic [ref=f8e225]: ‌
+            - generic [ref=f8e228]:
+              - generic [ref=f8e230] [cursor=pointer]:
+                - checkbox [disabled] [ref=f8e231]
+                - paragraph
+              - generic [ref=f8e233]: ‌
+            - generic [ref=f8e236]:
+              - generic [ref=f8e238] [cursor=pointer]:
+                - checkbox [disabled] [ref=f8e239]
+                - paragraph
+              - generic [ref=f8e241]: ‌
+            - generic [ref=f8e244]:
+              - generic [ref=f8e246] [cursor=pointer]:
+                - checkbox [disabled] [ref=f8e247]
+                - paragraph
+              - generic [ref=f8e249]: ‌
+            - generic [ref=f8e252]:
+              - generic [ref=f8e254] [cursor=pointer]:
+                - checkbox [disabled] [ref=f8e255]
+                - paragraph
+              - generic [ref=f8e257]: ‌
+            - generic [ref=f8e260]:
+              - generic [ref=f8e262] [cursor=pointer]:
+                - checkbox [disabled] [ref=f8e263]
+                - paragraph
+              - generic [ref=f8e265]: ‌
+            - generic [ref=f8e268]:
+              - generic [ref=f8e270] [cursor=pointer]:
+                - checkbox [disabled] [ref=f8e271]
+                - paragraph
+              - generic [ref=f8e273]: ‌
+          - generic [ref=f8e276]:
+            - generic [ref=f8e277]: ‌
+            - generic [ref=f8e283]:
+              - generic [ref=f8e285] [cursor=pointer]:
+                - checkbox [disabled] [ref=f8e286]
+                - paragraph
+              - generic [ref=f8e288]: ‌
+            - generic [ref=f8e291]:
+              - generic [ref=f8e293] [cursor=pointer]:
+                - checkbox [disabled] [ref=f8e294]
+                - paragraph
+              - generic [ref=f8e296]: ‌
+            - generic [ref=f8e299]:
+              - generic [ref=f8e301] [cursor=pointer]:
+                - checkbox [disabled] [ref=f8e302]
+                - paragraph
+              - generic [ref=f8e304]: ‌
+            - generic [ref=f8e307]:
+              - generic [ref=f8e309] [cursor=pointer]:
+                - checkbox [disabled] [ref=f8e310]
+                - paragraph
+              - generic [ref=f8e312]: ‌
+            - generic [ref=f8e315]:
+              - generic [ref=f8e317] [cursor=pointer]:
+                - checkbox [disabled] [ref=f8e318]
+                - paragraph
+              - generic [ref=f8e320]: ‌
+            - generic [ref=f8e323]:
+              - generic [ref=f8e325] [cursor=pointer]:
+                - checkbox [disabled] [ref=f8e326]
+                - paragraph
+              - generic [ref=f8e328]: ‌
+            - generic [ref=f8e331]:
+              - generic [ref=f8e333] [cursor=pointer]:
+                - checkbox [disabled] [ref=f8e334]
+                - paragraph
+              - generic [ref=f8e336]: ‌
+            - generic [ref=f8e339]:
+              - generic [ref=f8e341] [cursor=pointer]:
+                - checkbox [disabled] [ref=f8e342]
+                - paragraph
+              - generic [ref=f8e344]: ‌
+            - generic [ref=f8e347]:
+              - generic [ref=f8e349] [cursor=pointer]:
+                - checkbox [disabled] [ref=f8e350]
+                - paragraph
+              - generic [ref=f8e352]: ‌
+            - generic [ref=f8e355]:
+              - generic [ref=f8e357] [cursor=pointer]:
+                - checkbox [disabled] [ref=f8e358]
+                - paragraph
+              - generic [ref=f8e360]: ‌
+        - generic [ref=f8e364]:
+          - generic [ref=f8e365]:
+            - generic [ref=f8e366]:
+              - generic [ref=f8e367]: ‌
+              - generic [ref=f8e370]:
+                - generic [ref=f8e371]: ‌
+                - generic [ref=f8e375]: ‌
+                - generic [ref=f8e379]: ‌
+                - generic [ref=f8e383]: ‌
+            - generic [ref=f8e387]:
+              - generic [ref=f8e388]: ‌
+              - generic [ref=f8e391]:
+                - generic [ref=f8e392]: ‌
+                - generic [ref=f8e396]: ‌
+                - generic [ref=f8e400]: ‌
+                - generic [ref=f8e404]: ‌
+            - generic [ref=f8e408]:
+              - generic [ref=f8e409]: ‌
+              - generic [ref=f8e412]:
+                - generic [ref=f8e413]: ‌
+                - generic [ref=f8e417]: ‌
+                - generic [ref=f8e421]: ‌
+                - generic [ref=f8e425]: ‌
+          - generic [ref=f8e429]:
+            - generic [ref=f8e430]:
+              - generic [ref=f8e431]: ‌
+              - generic [ref=f8e434]:
+                - generic [ref=f8e435]: ‌
+                - generic [ref=f8e439]: ‌
+                - generic [ref=f8e443]: ‌
+                - generic [ref=f8e447]: ‌
+            - generic [ref=f8e451]:
+              - generic [ref=f8e452]: ‌
+              - generic [ref=f8e455]:
+                - generic [ref=f8e456]: ‌
+                - generic [ref=f8e460]: ‌
+                - generic [ref=f8e464]: ‌
+                - generic [ref=f8e468]: ‌
+            - generic [ref=f8e472]:
+              - generic [ref=f8e473]: ‌
+              - generic [ref=f8e476]:
+                - generic [ref=f8e477]: ‌
+                - generic [ref=f8e481]: ‌
+                - generic [ref=f8e485]: ‌
+                - generic [ref=f8e489]: ‌
+          - generic [ref=f8e493]:
+            - generic [ref=f8e494]:
+              - generic [ref=f8e495]: ‌
+              - generic [ref=f8e498]:
+                - generic [ref=f8e499]: ‌
+                - generic [ref=f8e503]: ‌
+                - generic [ref=f8e507]: ‌
+                - generic [ref=f8e511]: ‌
+            - generic [ref=f8e515]:
+              - generic [ref=f8e516]: ‌
+              - generic [ref=f8e519]:
+                - generic [ref=f8e520]: ‌
+                - generic [ref=f8e524]: ‌
+                - generic [ref=f8e528]: ‌
+                - generic [ref=f8e532]: ‌
+            - generic [ref=f8e536]:
+              - generic [ref=f8e537]: ‌
+              - generic [ref=f8e540]:
+                - generic [ref=f8e541]: ‌
+                - generic [ref=f8e545]: ‌
+                - generic [ref=f8e549]: ‌
+                - generic [ref=f8e553]: ‌
+    - button "맨 위로 이동" [ref=f8e558] [cursor=pointer]
+    - generic [ref=f8e560]:
+      - generic [ref=f8e561]:
+        - generic [ref=f8e562]:
+          - generic [ref=f8e563]:
+            - paragraph [ref=f8e564]: 고객행복센터
+            - strong [ref=f8e565]: 1644-1107월~토요일 오전 7시 - 오후 6시
+            - generic [ref=f8e566]:
+              - generic [ref=f8e567]:
+                - button "카카오톡 문의" [ref=f8e568] [cursor=pointer]
+                - generic [ref=f8e569]: 월~토요일오전 7시 - 오후 6시일/공휴일오전 7시 - 오후 1시
+              - generic [ref=f8e572]:
+                - button "1:1 문의" [ref=f8e573] [cursor=pointer]
+                - generic [ref=f8e574]: 365일고객센터 운영시간에 순차적으로 답변드리겠습니다.
+              - generic [ref=f8e575]:
+                - link "대량주문 문의" [ref=f8e576] [cursor=pointer]:
+                  - /url: https://docs.google.com/forms/d/e/1FAIpQLScWcjRuN6eWJK-G8x3NwBfE8IyKZIOq7jhD3fUXuKSWwPqzJw/viewform
+                - generic [ref=f8e577]: 월~금요일오전 9시 - 오후 6시점심시간낮 12시 - 오후 1시
+            - generic [ref=f8e580]:
+              - text: "비회원 문의 :"
+              - link "help@kurlycorp.com" [ref=f8e581] [cursor=pointer]:
+                - /url: mailto:help@kurlycorp.com
+          - generic [ref=f8e582]:
+            - list [ref=f8e583]:
+              - listitem [ref=f8e584]:
+                - link "회사소개" [ref=f8e585] [cursor=pointer]:
+                  - /url: https://newsroom.kurlycorp.com/
+              - listitem [ref=f8e586]:
+                - link "컬리소개영상" [ref=f8e587] [cursor=pointer]:
+                  - /url: https://www.youtube.com/embed/WEep7BcboMQ?rel=0&showinfo=0&wmode=opaque&enablejsapi=1
+              - listitem [ref=f8e588]:
+                - link "투자정보" [ref=f8e589] [cursor=pointer]:
+                  - /url: https://newsroom.kurlycorp.com/ir/%ec%9e%ac%eb%ac%b4%ec%a0%95%eb%b3%b4/
+              - listitem [ref=f8e590]:
+                - link "인재채용" [ref=f8e591] [cursor=pointer]:
+                  - /url: https://kurly.career.greetinghr.com
+              - listitem [ref=f8e592]:
+                - link "이용약관" [ref=f8e593] [cursor=pointer]:
+                  - /url: /user-terms/agreement
+              - listitem [ref=f8e594]:
+                - link "개인정보처리방침" [ref=f8e595] [cursor=pointer]:
+                  - /url: https://privacy.kurly.com/kurly/privacypolicy
+              - listitem [ref=f8e596]:
+                - link "이용안내" [ref=f8e597] [cursor=pointer]:
+                  - /url: /user-guide
+              - listitem [ref=f8e598]:
+                - link "입점신청" [ref=f8e599] [cursor=pointer]:
+                  - /url: https://docs.google.com/forms/d/e/1FAIpQLScKI_Kd1lQAp68r-SIhiOWj0J43C99IvNbgFeT7-X9YLIqteA/viewform?usp=dialog
+            - generic [ref=f8e600]:
+              - text: "법인명 (상호) : 주식회사 컬리"
+              - generic [ref=f8e601]: "|"
+              - text: "사업자등록번호 : 261-81-23567"
+              - link "사업자정보 확인" [ref=f8e602] [cursor=pointer]:
+                - /url: https://www.ftc.go.kr/bizCommPop.do?wrkr_no=2618123567&apv_perm_no=
+              - text: "통신판매업 : 제 2018-서울강남-01646 호주소 : 서울특별시 강남구 테헤란로 133, 18층(역삼동)"
+              - generic [ref=f8e603]: "|"
+              - text: "대표이사 : 김슬아채용문의 :"
+              - link "recruit@kurlycorp.com" [ref=f8e604] [cursor=pointer]:
+                - /url: mailto:recruit@kurlycorp.com
+              - text: "팩스: 070 - 7500 - 6098"
+            - list [ref=f8e605]:
+              - listitem [ref=f8e606]:
+                - link [ref=f8e607] [cursor=pointer]:
+                  - /url: https://instagram.com/marketkurly
+                  - img "컬리 인스타그램 바로가기" [ref=f8e608]
+              - listitem [ref=f8e609]:
+                - link [ref=f8e610] [cursor=pointer]:
+                  - /url: https://www.facebook.com/marketkurly
+                  - img "컬리 페이스북 바로가기" [ref=f8e611]
+              - listitem [ref=f8e612]:
+                - link [ref=f8e613] [cursor=pointer]:
+                  - /url: https://blog.naver.com/marketkurly
+                  - img "컬리 네이버블로그 바로가기" [ref=f8e614]
+              - listitem [ref=f8e615]:
+                - link [ref=f8e616] [cursor=pointer]:
+                  - /url: https://www.youtube.com/channel/UCfpdjL5pl-1qKT7Xp4UQzQg
+                  - img "컬리 유튜브 바로가기" [ref=f8e617]
+        - generic [ref=f8e618]:
+          - button [ref=f8e619] [cursor=pointer]:
+            - img "isms 로고" [ref=f8e620]
+            - paragraph [ref=f8e621]: "[인증범위] 컬리 쇼핑몰 서비스 개발·운영(심사받지 않은 물리적 인프라 제외)[유효기간] 2025.01.15 ~ 2028.01.14"
+          - button [ref=f8e622] [cursor=pointer]:
+            - img "우리은행 로고" [ref=f8e623]
+            - paragraph [ref=f8e624]: 고객님이 현금으로 결제한 금액에 대해 우리은행과채무지급보증 계약을 체결하여 안전거래를 보장하고있습니다.
+      - generic [ref=f8e625]:
+        - text: 컬리에서 판매되는 상품 중에는 컬리에 입점한 개별 판매자가 판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다.마켓플레이스(오픈마켓) 상품의 경우 컬리는 통신판매중개자로서 통신판매의 당사자가 아닙니다. 컬리는 해당 상품의 주문, 품질, 교환/환불 등 의무와 책임을 부담하지 않습니다.
+        - emphasis [ref=f8e626]: © KURLY CORP. ALL RIGHTS RESERVED
+  - alert [ref=f8e627]
