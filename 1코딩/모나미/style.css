@@ -27,9 +27,7 @@ img{
     margin-left: auto;
     margin-right: auto;
 }
-.header-con {
-    flex-direction: column;
-}
+
 .lang-btn {
     display: flex;
     align-items: center;
@@ -39,10 +37,11 @@ img{
     border-radius: 10px;
 }
 
-.utmenu {
+
+.utmenu-con {
     display: flex;
     justify-content: space-between;
-    height: 58px;    
+    height: 58px;
 }
 .links {
     display: flex;
@@ -69,5 +68,16 @@ img{
 .topmenu {
     display: flex;
     justify-content: flex-end;
-    
+    gap: 20px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar-con {
+    display: flex;
+    justify-content: space-between;
 }
