@@ -1,0 +1,24 @@
+[    3134ms] [LOG] IMQAMpmAgent javascript init @ https://image.osulloc.com/kr/ko/static_renew/js/webview-agent.js:0
+[    3134ms] [LOG] [IMQA Bridge] cannot connect @ https://image.osulloc.com/kr/ko/static_renew/js/webview-agent.js:0
+[    4333ms] [ERROR] Framing 'https://t1.kakaocdn.net/' violates the following Content Security Policy directive: "frame-src 'self' https://postcode.map.kakao.com https://www.facebook.com *.iamport.kr *.osulloc.com https://kn.acrosspf.com https://kn.acrosspf.com *.doubleclick.net *.criteo.com https://t1.daumcdn.net https://www.googletagmanager.com player.vimeo.com". The request has been blocked.
+ @ https://t1.daumcdn.net/:0
+[    5282ms] [WARNING] [Meta Pixel] - Invalid parameter format for currency. Please refer https://developers.facebook.com/docs/meta-pixel/reference/ for valid parameter specifications. @ https://www.datadoghq-browser-agent.com/us1/v7/datadog-rum.js:0
+[    6517ms] [ERROR] Framing 'https://act.ds.kakao.com/' violates the following Content Security Policy directive: "frame-src 'self' https://postcode.map.kakao.com https://www.facebook.com *.iamport.kr *.osulloc.com https://kn.acrosspf.com https://kn.acrosspf.com *.doubleclick.net *.criteo.com https://t1.daumcdn.net https://www.googletagmanager.com player.vimeo.com". The request has been blocked.
+ @ https://cdn.megadata.co.kr/:0
+[    6707ms] [ERROR] Framing 'https://google.mediacategory.com/' violates the following Content Security Policy directive: "frame-src 'self' https://postcode.map.kakao.com https://www.facebook.com *.iamport.kr *.osulloc.com https://kn.acrosspf.com https://kn.acrosspf.com *.doubleclick.net *.criteo.com https://t1.daumcdn.net https://www.googletagmanager.com player.vimeo.com". The request has been blocked.
+ @ https://cdn.megadata.co.kr/:0
+[    6741ms] ReferenceError: ga is not defined
+    at window.onload (https://www.osulloc.com/:1657:14)
+[  701875ms] [LOG] swiper-pagination-bullet @ https://kr.bluebottlecoffee.com/cdn/shop/t/2/assets/bbck-theme.js?v=31988092689346503921722480815:0
+[  701877ms] [LOG] index 0 @ https://kr.bluebottlecoffee.com/cdn/shop/t/2/assets/bbck-theme.js?v=31988092689346503921722480815:0
+[  701877ms] [LOG] swiper-pagination-bullet @ https://kr.bluebottlecoffee.com/cdn/shop/t/2/assets/bbck-theme.js?v=31988092689346503921722480815:0
+[  701877ms] [LOG] index 1 @ https://kr.bluebottlecoffee.com/cdn/shop/t/2/assets/bbck-theme.js?v=31988092689346503921722480815:0
+[  701877ms] [LOG] swiper-pagination-bullet @ https://kr.bluebottlecoffee.com/cdn/shop/t/2/assets/bbck-theme.js?v=31988092689346503921722480815:0
+[  701877ms] [LOG] index 2 @ https://kr.bluebottlecoffee.com/cdn/shop/t/2/assets/bbck-theme.js?v=31988092689346503921722480815:0
+[  701878ms] [LOG] {loop: true} @ https://kr.bluebottlecoffee.com/cdn/shop/t/2/assets/bbck-theme.js?v=31988092689346503921722480815:0
+[  701956ms] [WARNING] In a sandboxed environment, addEventListener may not behave as expected. @ https://kr.bluebottlecoffee.com/cdn/wpm/s610a19cewf693d529pf324840bm6169d9b4m.js:0
+[  701984ms] [LOG] bootstap @ https://cdn.shopify.com/extensions/01a18b57-c33b-7098-95a4-8366df9bea35/gift-box-builder-1-502/assets/easy-bundle-min.js:0
+[  702017ms] [LOG] ChannelIO script loaded with plugin key: 4a7023e0-203e-430b-bd7e-cf76617bfc5d @ https://kr.bluebottlecoffee.com/:5586
+[  702036ms] [WARNING] In a sandboxed environment, addEventListener may not behave as expected. @ https://kr.bluebottlecoffee.com/cdn/wpm/s610a19cewf693d529pf324840bm6169d9b4m.js:0
+[  703651ms] [INFO] pageView @ https://kr.bluebottlecoffee.com/web-pixels@610a19cewf693d529pf324840bm6169d9b4/custom/web-pixel-36733181@2/sandbox/modern/:24
+[  703684ms] [INFO] pageView naver @ https://kr.bluebottlecoffee.com/web-pixels@610a19cewf693d529pf324840bm6169d9b4/custom/web-pixel-38568189@25/sandbox/modern/:32

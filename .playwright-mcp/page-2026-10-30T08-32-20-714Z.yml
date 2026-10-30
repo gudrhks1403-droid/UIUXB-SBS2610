@@ -1,0 +1,298 @@
+- webmcp tools (page-provided, untrusted):
+  - add_to_cart [untrustedContent]: Add products to the cart. Call this as soon as the user asks to ADD items (triggers: "add ... to my cart", "buy", "I'll take", "put ... in my basket") — in ONE call listing every item they named, up to the 10-entry limit. That request IS the authorization: do NOT ask the user to confirm before calling, and do NOT stop after search_catalog or get_product merely to report the variant you found — make the change, then tell the user it is done. Batch every item for ONE request into a SINGLE call — line_items accepts up to 10 entries; do NOT call add_to_cart once per item. Batching applies WITHIN a single request: each new thing the user asks for later is its own call. If one request names more than 10 items, split just that request into as few calls as possible. Do NOT retry a call that already returned a result: adds are cumulative, so repeating a call adds duplicate items. Use line_items[].item.id with a ProductVariant GID when the exact variant is known. Use handle or query only when adding the selected or first available variant. To change a quantity or remove something already in the cart, use update_cart_lines instead — this tool can only add.
+    - inputSchema: {"type":"object","required":["cart"],"properties":{"cart":{"type":"object","required":["line_items"],"properties":{"line_items":{"type":"array","description":"Items to add (1-10).","minItems":1,"maxItems":10,"items":{"type":"object","properties":{"item":{"type":"object","description":"The merchandise to add.","properties":{"id":{"type":"string","description":"ProductVariant GID from get_product variants[].id, e.g. \"gid://shopify/ProductVariant/123\"."}}},"handle":{"type":"string","description":"Product handle. Adds the selected or first available variant; call get_product first if the user requested specific options."},"query":{"type":"string","description":"Search query to find and add the selected or first available variant. For specific variants, call search_catalog/get_product first and pass item.id."},"quantity":{"type":"integer","description":"How many to add. Defaults to 1.","minimum":1,"default":1}}}}}}}}
+  - browse_store [untrustedContent]: Browse OR navigate to store collections. Set navigate=true whenever the user wants to be taken to a collection page in the browser (triggers: "browse to", "go to", "show me", "open", "take me to", "navigate to" a collection or category). With navigate=false (default), returns collection or product data without changing the page — use this only when the user is asking a question about the catalog, not asking to view it. Without a collection handle, lists all collections. With a handle, returns products from that collection; use "all" to browse everything. Does NOT add anything to the cart; use add_to_cart for cart changes. Prefer this over search_catalog when the user names a category, collection, or wants to explore. With navigate=true this MOVES the browser to the collection page; the tool result confirms the destination, and no further navigation is needed to show it.
+    - inputSchema: {"type":"object","properties":{"collection":{"type":"string","description":"Collection handle to browse (e.g. \"best-sellers\", \"new-arrivals\"). Omit to list all collections. Use \"all\" to browse every product."},"navigate":{"type":"boolean","description":"When true, navigate the browser to the collection page after loading data. Set true for user intents like \"browse to\", \"go to\", \"show me\", \"open\", \"take me to\" a collection. Requires a collection handle. Defaults to false."},"sort_by":{"type":"string","description":"Sort order. Options: best-selling (default), price-ascending, price-descending, title-ascending, title-descending, created-descending, created-ascending."},"page":{"type":"number","description":"Page number for pagination (starts at 1). Each page returns up to 30 products."}}}
+  - cancel_cart: Remove all items from the cart in one step. Use when the user wants to empty their cart or start over.
+    - inputSchema: {"type":"object","properties":{}}
+  - get_cart [readOnly, untrustedContent]: Get the current shopping cart contents — line items with product titles, variant titles, handles, URLs, images, unit prices, quantities, and totals. Everything needed to describe the cart to the user in natural language, without a follow-up get_product call per line. Works from any page.
+    - inputSchema: {"type":"object","properties":{}}
+  - get_product [untrustedContent]: Get product details, OR navigate the browser to the product page. Set catalog.navigate=true whenever the user wants to see/view the product in the browser (triggers: "show me", "open", "view", "go to", "take me to", "navigate to" a product). Set catalog.navigate=false (default) only when you need data (description, options, variants, prices, availability) to answer a question or to prepare an add_to_cart call — the browser stays on the current page. Defaults to the current page's product if no catalog.id is provided. Does NOT add anything to the cart; use add_to_cart for that. To view a specific variant (color/size/etc.) in the browser, use show_variant instead — it accepts partial option selections like "purple" without needing every option. To add a specific variant to the cart, call get_product with catalog.selected_options to get its variant id. With catalog.navigate=true this MOVES the browser to the product page; the tool result confirms the destination, and no further navigation is needed to show it.
+    - inputSchema: {"type":"object","properties":{"catalog":{"type":"object","description":"Product detail parameters.","properties":{"id":{"type":"string","description":"Storefront API Product GID, product handle, or product URL path. Custom app product paths and Shopify standard /products/<handle> paths are supported. The id field from search_catalog or browse_store can be passed directly. If omitted, uses the current page's product."},"navigate":{"type":"boolean","description":"When true, navigate the browser to the product page after fetching details. Set true for user intents like \"show me\", \"open\", \"view\", \"go to\", \"take me to\" a product. Defaults to false. If the user specified partial options (e.g. only a color), prefer show_variant with selected_options instead."},"selected_options":{"type":"array","description":"Known product option selections to filter available_options. Use exact option names and values from search_catalog options or a prior get_product available_options entry.","items":{"type":"object","properties":{"name":{"type":"string","description":"Option name, e.g. \"Size\" or \"Color\"."},"value":{"type":"string","description":"Option value, e.g. \"160cm\" or \"Fiberglass\"."}},"required":["name","value"]}}}}}}
+  - get_ucp_profile [readOnly, untrustedContent]: Get this store's Universal Commerce Protocol (UCP) profile, as served at /.well-known/ucp: the UCP version, the services the store offers with their endpoints (e.g. the store's UCP MCP server), its capabilities, and its payment handlers. Use it to discover how to continue a purchase with this store over UCP, or to check which platform operates the store. Read-only; works from any page.
+    - inputSchema: {"type":"object","properties":{}}
+  - manage_orders: Navigate to the customer's order history page. Use when the user asks about past orders, order status, tracking, or returns. The user will be prompted to log in if not already authenticated. This MOVES the browser to the order history page; the tool result confirms the destination, and no further navigation is needed to show it.
+    - inputSchema: {"type":"object","properties":{}}
+  - proceed_to_checkout: Proceed to checkout. Verifies the cart is not empty, then MOVES the browser to the checkout page. The tool result confirms the destination, and no further navigation is needed to show it.
+    - inputSchema: {"type":"object","properties":{}}
+  - search_catalog [readOnly, untrustedContent]: Search the store catalog for products, collections, articles, and pages. Does NOT add anything to the cart; use add_to_cart for cart changes. If the user asks for a specific product variant, call get_product after search_catalog to get its variant ID for add_to_cart, or use show_variant to display it.
+    - inputSchema: {"type":"object","required":["catalog"],"properties":{"catalog":{"type":"object","required":["query"],"properties":{"query":{"type":"string","description":"Search query string."},"pagination":{"type":"object","properties":{"limit":{"type":"integer","description":"Max results per type (1-10). Defaults to 5.","default":5,"minimum":1,"maximum":10}}}}}}}
+  - search_shop_policies_and_faqs [readOnly, untrustedContent]: Used to get facts about the store's policies, FAQ, or contact details.
+When the question is about specific policy kinds, set policy_types to those kinds; leave it unset for general FAQ questions.
+Some examples of questions you can ask are:
+  - What is your return policy? (policy_types: ["refund"])
+  - What is your shipping policy? (policy_types: ["shipping"])
+  - What is your phone number? (policy_types: ["contact"])
+  - What are your hours of operation? (policy_types: ["contact"])
+  - Do you offer gift wrapping? (general FAQ, no specific policy kind — leave policy_types unset)
+
+    - inputSchema: {"type":"object","properties":{"query":{"type":"string","description":"A natural language query. Searches FAQ pages and articles, and routes policies by keyword when policy_types is omitted."},"policy_types":{"type":"array","description":"Policy kinds to fetch, chosen from the user's question — e.g. [\"refund\"] for returns/exchanges, [\"contact\"] for phone/hours/address. Include every kind the question touches. Omit when no specific policy is relevant (e.g. a general FAQ question).","items":{"type":"string","enum":["refund","shipping","privacy","terms_of_service","terms_of_sale","subscription","legal_notice","contact"]}}},"required":["query"]}
+  - show_variant [untrustedContent]: Navigate the browser to a product page, with a specific variant OR a partial option filter selected. Use for view intents: "show me", "open", "view", "go to", "take me to" a specific product configuration. Accepts EITHER variant_id (fully specified variant) OR selected_options (partial, e.g. only Color=Purple) — with partial options the first matching available variant is picked automatically, so DO NOT ask the user for missing options when their intent is to view. Does NOT add anything to the cart; use add_to_cart for cart changes. For cart operations you still need a full variant_id — call get_product with the full option combination first. This MOVES the browser to the exact variant page with the variant pre-selected; the tool result confirms the destination, and no further navigation is needed to show it.
+    - inputSchema: {"type":"object","required":["catalog"],"properties":{"catalog":{"type":"object","description":"Provide EITHER variant_id OR selected_options. Handle is required unless the user is already on the product page.","properties":{"handle":{"type":"string","description":"Product handle. If omitted, uses the current product page's handle."},"variant_id":{"type":["string","number"],"description":"ProductVariant ID from get_product variants[].id, e.g. \"gid://shopify/ProductVariant/123\", or the numeric variant ID. Use when the user picked a specific fully-specified variant. Omit when using selected_options."},"selected_options":{"type":"array","description":"Partial (or full) option selections, e.g. [{\"name\":\"Color\",\"value\":\"Purple\"}]. Use when the user names some options but not all (e.g. \"show me the purple shoe\" — pass only Color). The first matching available variant will be selected automatically. Use exact option names and values from get_product available_options or search_catalog options.","items":{"type":"object","properties":{"name":{"type":"string"},"value":{"type":"string"}}}}}}}}
+  - update_cart_lines [untrustedContent]: Change the quantity of items already in the cart, or remove them. Every change here addresses an existing cart line by its id, so call get_cart first unless you already have line_items[].id from an earlier get_cart in this conversation. Pass the ABSOLUTE target quantity, not a delta — quantity 2 means the line ends up at 2 regardless of what it was. Use quantity 0 to remove the line entirely. Batch every change for ONE request into a SINGLE call — line_items accepts up to 10 entries; do NOT call update_cart_lines once per line. Batching applies WITHIN a single request: each new thing the user asks for later is its own call. This tool cannot add new merchandise. To add something not already in the cart, use add_to_cart. To empty the whole cart at once, use cancel_cart.
+    - inputSchema: {"type":"object","required":["cart"],"properties":{"cart":{"type":"object","required":["line_items"],"properties":{"line_items":{"type":"array","description":"Existing cart lines to update or remove (1-10).","minItems":1,"maxItems":10,"items":{"type":"object","required":["id","quantity"],"properties":{"id":{"type":"string","description":"Existing cart line id from get_cart line_items[].id. Required — this tool cannot resolve products by name."},"quantity":{"type":"integer","description":"Absolute target quantity for this line (not a delta). 0 removes the line.","minimum":0}}}}}}}}
+
+- generic [active] [ref=f29e1]:
+  - link "콘텐츠로 건너뛰기" [ref=f29e2] [cursor=pointer]:
+    - /url: "#MainContent"
+  - generic [ref=f29e6]:
+    - group "1 / 2" [ref=f29e7]:
+      - link "원두 및 커피 최대 10% 할인 번들 구매 혜택" [ref=f29e8] [cursor=pointer]:
+        - /url: https://kr.bluebottlecoffee.com/apps/gbb/easybundle/1
+        - paragraph [ref=f29e10]:
+          - generic [ref=f29e11]: 원두 및 커피 최대 10% 할인 번들 구매 혜택
+    - group "2 / 2" [ref=f29e12]:
+      - link "35,000원 이상 구매 시 무료 배송 (제주도 별도)" [ref=f29e13] [cursor=pointer]:
+        - /url: /collections/bestsellers
+        - paragraph [ref=f29e15]:
+          - generic [ref=f29e16]: 35,000원 이상 구매 시 무료 배송 (제주도 별도)
+  - banner [ref=f29e19]:
+    - group [ref=f29e21]:
+      - button "메뉴" [ref=f29e22]:
+        - list [ref=f29e23]:
+          - listitem [ref=f29e24] [cursor=pointer]: 쇼핑
+          - listitem [ref=f29e25] [cursor=pointer]:
+            - link "베스트셀러" [ref=f29e26]:
+              - /url: /collections/bestsellers
+          - listitem [ref=f29e27] [cursor=pointer]:
+            - link "카페" [ref=f29e28]:
+              - /url: /pages/cafe-list
+          - listitem [ref=f29e29] [cursor=pointer]:
+            - link "블로그" [ref=f29e30]:
+              - /url: /pages/coffee-lab
+    - heading [level=1] [ref=f29e31]:
+      - link [ref=f29e32] [cursor=pointer]:
+        - /url: /
+    - generic [ref=f29e36]:
+      - group [ref=f29e38]:
+        - button "검색" [ref=f29e39] [cursor=pointer]
+      - group [ref=f29e45]:
+        - button "검색" [ref=f29e46] [cursor=pointer]
+      - link "카트" [ref=f29e52] [cursor=pointer]:
+        - /url: /cart
+  - main [ref=f29e61]:
+    - generic [ref=f29e65]:
+      - generic [ref=f29e66]:
+        - group "1 / 2" [ref=f29e67]:
+          - generic [ref=f29e69]:
+            - img "시그니처 블렌드" [ref=f29e73]
+            - generic [ref=f29e74]:
+              - generic [ref=f29e75]: 시그니처 블렌드
+              - generic [ref=f29e76]: 블루보틀을 대표하는 원두를 만나보세요
+              - link "자세히 보기" [ref=f29e78] [cursor=pointer]:
+                - /url: /collections/blends
+        - group "2 / 2":
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - img "새로운 아이템"
+              - generic:
+                - generic: 새로운 아이템
+                - generic: 더 넉넉해진 사이즈의 커뮤터컵 20oz
+                - generic:
+                  - link "자세히 보기":
+                    - /url: /products/commuter-cup-20oz
+      - generic:
+        - button "Previous slide" [ref=f29e79] [cursor=pointer]
+        - button "Next slide" [ref=f29e82] [cursor=pointer]
+      - generic [ref=f29e85]:
+        - generic [ref=f29e86] [cursor=pointer]: "01"
+        - generic [ref=f29e87] [cursor=pointer]: "02"
+    - generic [ref=f29e91]:
+      - generic [ref=f29e92]:
+        - group "1 / 7" [ref=f29e93]:
+          - link [ref=f29e96] [cursor=pointer]:
+            - /url: /products/blue-bottle-beyond-arabica-blend
+            - generic [ref=f29e97]:
+              - strong [ref=f29e98]: 비욘드 아라비카 블렌드
+              - paragraph [ref=f29e99]: 새로운 종이 담고 있는 가능성
+            - img "비욘드 아라비카 블렌드" [ref=f29e101]
+        - group "2 / 7" [ref=f29e102]:
+          - link [ref=f29e105] [cursor=pointer]:
+            - /url: /products/brazil-faf-serra-do-cigano-joao-hamilton
+            - generic [ref=f29e106]:
+              - strong [ref=f29e107]: 새로운 싱글 오리진
+              - paragraph [ref=f29e108]: 브라질 FAF 세라 도 시가노 주앙 해밀턴
+            - img "새로운 싱글 오리진" [ref=f29e110]
+        - group "3 / 7" [ref=f29e111]:
+          - link [ref=f29e114] [cursor=pointer]:
+            - /url: /products/day-off-tumbler
+            - generic [ref=f29e115]:
+              - strong [ref=f29e116]: 데이오프 텀블러
+              - paragraph [ref=f29e117]: 미니멀한 디자인과 실용적인 기능
+            - img "데이오프 텀블러" [ref=f29e119]
+        - group "4 / 7" [ref=f29e120]:
+          - link [ref=f29e123] [cursor=pointer]:
+            - /url: /products/blue-bottle-coffee-breakfast-set
+            - generic [ref=f29e124]:
+              - strong [ref=f29e125]: 브렉퍼스트 세트
+              - paragraph [ref=f29e126]: 완벽한 아침을 위한 테이블웨어
+            - img "브렉퍼스트 세트" [ref=f29e128]
+        - group "5 / 7" [ref=f29e129]:
+          - link [ref=f29e132] [cursor=pointer]:
+            - /url: /products/craft-instant-coffee-espresso-66g
+            - generic [ref=f29e133]:
+              - strong [ref=f29e134]: 크래프트 인스턴트 커피
+              - paragraph [ref=f29e135]: 스푼 하나로 즐기는 카페 퀄리티의 커피
+            - img "크래프트 인스턴트 커피" [ref=f29e137]
+        - group "6 / 7" [ref=f29e138]:
+          - link [ref=f29e141] [cursor=pointer]:
+            - /url: /products/blue-bottle-stackable-glass-mug
+            - generic [ref=f29e142]:
+              - strong [ref=f29e143]: 스태커블 글라스 머그
+              - paragraph [ref=f29e144]: 쌓일수록 더해지는 감각적인 디자인
+            - img "스태커블 글라스 머그" [ref=f29e146]
+        - group "7 / 7" [ref=f29e147]:
+          - link [ref=f29e150] [cursor=pointer]:
+            - /url: /products/essentialist-mug-300ml
+            - generic [ref=f29e151]:
+              - strong [ref=f29e152]: 에센셜리스트 머그
+              - paragraph [ref=f29e153]: 유니크한 디자인의 아이코닉 머그
+            - img "에센셜리스트 머그" [ref=f29e155]
+      - button "Next slide" [ref=f29e156] [cursor=pointer]
+    - generic [ref=f29e164]:
+      - generic [ref=f29e165]:
+        - heading "하사미 포셀린 머그" [level=2] [ref=f29e166]
+        - paragraph [ref=f29e167]: 많은 사랑을 받았던 하사미 포셀린 머그를 한정 수량으로 만나보세요.
+      - link "자세히 보기" [ref=f29e169] [cursor=pointer]:
+        - /url: /products/hasami-porcelain-mug
+    - generic [ref=f29e177]:
+      - heading "온라인 스토어 단독 푸어 오버 키트를 만나보세요" [level=2] [ref=f29e179]
+      - generic [ref=f29e181]:
+        - generic [ref=f29e183]:
+          - heading "커피 드리퍼" [level=2] [ref=f29e184]
+          - paragraph [ref=f29e186]: 최상의 푸어 오버를 위해 탄생한 정교한 디자인과 기능
+        - generic [ref=f29e188]:
+          - heading "커피 카라페" [level=2] [ref=f29e189]
+          - paragraph [ref=f29e191]: 드리퍼와 함께 편리하게 사용할 수 있는 디자인과 사이즈
+        - generic [ref=f29e193]:
+          - heading "커피 필터" [level=2] [ref=f29e194]
+          - paragraph [ref=f29e196]: 블루보틀의 노하우를 담은 독창적 디자인의 필터
+      - link "푸어 오버 키트 보기" [ref=f29e197] [cursor=pointer]:
+        - /url: /products/blue-bottle-pour-over-kit
+    - generic [ref=f29e205]:
+      - heading "소중한 분들을 위한 선물 세트를 만나보세요" [level=2] [ref=f29e207]
+      - generic [ref=f29e208]:
+        - generic [ref=f29e210]:
+          - heading "브렉퍼스트 세트" [level=2] [ref=f29e211]
+          - paragraph [ref=f29e213]: 아침을 위한 테이블웨어 세트
+        - generic [ref=f29e215]:
+          - heading "앳 홈 클래식 세트" [level=2] [ref=f29e216]
+          - paragraph [ref=f29e218]: 매일의 커피 리추얼을 위한 세트
+        - generic [ref=f29e220]:
+          - heading "더블월 써모 글라스 세트" [level=2] [ref=f29e221]
+          - paragraph [ref=f29e223]: 아이스 음료를 위한 유리잔 세트
+      - link "선물 세트 보기" [ref=f29e224] [cursor=pointer]:
+        - /url: /collections/gift-set
+    - generic [ref=f29e226]:
+      - generic [ref=f29e228]:
+        - generic [ref=f29e229]:
+          - group "1 / 3" [ref=f29e230]:
+            - generic [ref=f29e231]: 블루보틀 커피 트럭 김포
+          - group "2 / 3" [ref=f29e235]:
+            - generic [ref=f29e236]: 블루보틀 대구 신세계 팝업 카페
+          - group "3 / 3" [ref=f29e240]:
+            - generic [ref=f29e241]: 블루보틀 원그로브 카페
+        - button "Next slide" [ref=f29e245] [cursor=pointer]
+        - generic [ref=f29e248]:
+          - generic [ref=f29e249] [cursor=pointer]: "01"
+          - generic [ref=f29e250] [cursor=pointer]: "02"
+          - generic [ref=f29e251] [cursor=pointer]: "03"
+      - generic [ref=f29e252]:
+        - heading "가까운 블루보틀 카페를 확인해보세요" [level=2] [ref=f29e253]
+        - link "카페 찾기" [ref=f29e255] [cursor=pointer]:
+          - /url: /pages/cafe-list
+  - contentinfo [ref=f29e257]:
+    - generic [ref=f29e258]:
+      - generic [ref=f29e259]:
+        - generic [ref=f29e260]:
+          - heading "블루보틀 커피" [level=2] [ref=f29e261]
+          - list [ref=f29e262]:
+            - listitem [ref=f29e263]:
+              - link "카페 찾기" [ref=f29e264] [cursor=pointer]:
+                - /url: /pages/cafe-list
+            - listitem [ref=f29e265]:
+              - link "커리어" [ref=f29e266] [cursor=pointer]:
+                - /url: https://jobs.lever.co/bluebottlecoffee?location=Korea
+        - generic [ref=f29e267]:
+          - heading "알아보기" [level=2] [ref=f29e268]
+          - list [ref=f29e269]:
+            - listitem [ref=f29e270]:
+              - link "브랜드 소개" [ref=f29e271] [cursor=pointer]:
+                - /url: /pages/about-us
+            - listitem [ref=f29e272]:
+              - link "블루보틀 커피" [ref=f29e273] [cursor=pointer]:
+                - /url: /pages/our-coffee
+            - listitem [ref=f29e274]:
+              - link "지속가능성" [ref=f29e275] [cursor=pointer]:
+                - /url: /pages/blue-bottle-sustainability
+            - listitem [ref=f29e276]:
+              - link "브루잉 가이드" [ref=f29e277] [cursor=pointer]:
+                - /url: /pages/brew-guides
+            - listitem [ref=f29e278]:
+              - link "블로그" [ref=f29e279] [cursor=pointer]:
+                - /url: /pages/blog-landing
+        - generic [ref=f29e280]:
+          - heading "문의" [level=2] [ref=f29e281]
+          - list [ref=f29e282]:
+            - listitem [ref=f29e283]:
+              - link "고객 문의" [ref=f29e284] [cursor=pointer]:
+                - /url: /pages/contact
+            - listitem [ref=f29e285]:
+              - link "단체/기업 구매 문의" [ref=f29e286] [cursor=pointer]:
+                - /url: /pages/b2b-contact
+            - listitem [ref=f29e287]:
+              - link "자주 묻는 질문" [ref=f29e288] [cursor=pointer]:
+                - /url: /pages/faq
+      - generic [ref=f29e290]:
+        - generic [ref=f29e291]:
+          - heading "구독하고 최신 정보를 받아보세요." [level=2] [ref=f29e292]
+          - heading [level=2] [ref=f29e293]:
+            - paragraph [ref=f29e294]: 이메일 뉴스레터에 가입하여 독점 혜택, 블루보틀 뉴스, 이벤트, 그리고 기분 좋은 신제품 소식을 누구보다 먼저 알아보세요.
+          - generic [ref=f29e297]:
+            - textbox "이메일 주소를 입력해 주세요." [ref=f29e298]
+            - button "가입하기" [ref=f29e299] [cursor=pointer]
+          - generic [ref=f29e302]:
+            - link "개인정보 처리 방침" [ref=f29e303] [cursor=pointer]:
+              - /url: /policies/privacy-policy
+            - text: 및
+            - link "이용 약관" [ref=f29e304] [cursor=pointer]:
+              - /url: /policies/terms-of-service
+        - list [ref=f29e305]:
+          - listitem [ref=f29e306]:
+            - link "Facebook" [ref=f29e307] [cursor=pointer]:
+              - /url: https://www.facebook.com/bluebottlecoffee
+          - listitem [ref=f29e311]:
+            - link "X(Twitter)" [ref=f29e312] [cursor=pointer]:
+              - /url: https://x.com/bluebottleroast
+          - listitem [ref=f29e316]:
+            - link "Instagram" [ref=f29e317] [cursor=pointer]:
+              - /url: https://www.instagram.com/bluebottlekorea/
+          - listitem [ref=f29e321]:
+            - link "YouTube" [ref=f29e322] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UCyki4e6RG84BT_xzi4oYkRw
+          - listitem [ref=f29e326]:
+            - 'link "Translation missing: ko.general.social.kakao.vimeo" [ref=f29e327] [cursor=pointer]':
+              - /url: http://pf.kakao.com/_yShcxj
+      - generic [ref=f29e359]:
+        - generic [ref=f29e360]: "상호: 블루보틀커피코리아 유한회사 I 대표자: ERIK WILLY JENKINS(에릭윌리젠킨스) I 개인정보관리책임자: ERIK WILLY JENKINS"
+        - generic [ref=f29e361]:
+          - text: "사업자등록번호: 155-81-01195 I"
+          - link "사업정보확인" [ref=f29e362] [cursor=pointer]:
+            - /url: https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1558101195
+          - text: "I 통신판매업신고: 2023-서울성동-0715 I 대표번호: 1533-6906"
+        - generic [ref=f29e363]: "이메일: support_kr@bluebottlecoffee.com I 주소: 서울특별시 성동구 아차산로 7(성수동 1가) I 호스팅서비스 제공자: Shopify, Inc."
+    - generic [ref=f29e366]:
+      - list [ref=f29e367]:
+        - listitem [ref=f29e368]:
+          - link "개인정보 처리방침" [ref=f29e370] [cursor=pointer]:
+            - /url: /policies/privacy-policy
+        - listitem [ref=f29e371]:
+          - link "판매이용약관" [ref=f29e373] [cursor=pointer]:
+            - /url: /policies/terms-of-service
+        - listitem [ref=f29e374]:
+          - link "환불 정책" [ref=f29e376] [cursor=pointer]:
+            - /url: /policies/refund-policy
+      - generic [ref=f29e377]: © 2023 BLUE BOTTLE COFFEE INC., ALL RIGHTS RESERVED

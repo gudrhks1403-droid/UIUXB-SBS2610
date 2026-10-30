@@ -1,0 +1,517 @@
+- generic [active] [ref=f24e1]:
+  - generic [ref=f24e3]:
+    - generic [ref=f24e4]:
+      - generic [ref=f24e5]:
+        - paragraph [ref=f24e8]:
+          - text: Limited edition collectible vinyl out now |
+          - link "Shop Notes in Repose album" [ref=f24e9] [cursor=pointer]:
+            - /url: https://bluebottlecoffee.com/us/eng/product/notes-in-repose-vinyl
+        - generic [ref=f24e11]:
+          - img "Flag of United States" [ref=f24e14]
+          - generic [ref=f24e28]:
+            - generic [ref=f24e29]: Country Selector
+            - combobox "Country Selector" [ref=f24e33] [cursor=pointer]:
+              - option "United States" [selected]: us
+              - option "Canada": ca
+              - option "Japan": jp
+              - option "Korea": kr
+      - navigation [ref=f24e34]:
+        - link "Skip to content" [ref=f24e35] [cursor=pointer]:
+          - /url: "#main"
+        - generic [ref=f24e36]:
+          - list [ref=f24e37]:
+            - listitem [ref=f24e38]:
+              - button [ref=f24e39] [cursor=pointer]:
+                - paragraph [ref=f24e40]: SHOP
+            - listitem [ref=f24e41]:
+              - link [ref=f24e42] [cursor=pointer]:
+                - /url: /us/eng/shop/best-sellers
+                - paragraph [ref=f24e43]: BEST SELLERS
+            - listitem [ref=f24e44]:
+              - link [ref=f24e45] [cursor=pointer]:
+                - /url: /us/eng/subscriptions
+                - paragraph [ref=f24e46]: SUBSCRIPTIONS
+            - listitem [ref=f24e47]:
+              - button [ref=f24e48] [cursor=pointer]:
+                - paragraph [ref=f24e49]: VISIT US & LEARN
+          - link "Go to Blue Bottle home page" [ref=f24e51] [cursor=pointer]:
+            - /url: /us/eng
+          - generic [ref=f24e55]:
+            - button "Open product search panel" [ref=f24e56] [cursor=pointer]
+            - button "Open account panel" [ref=f24e61] [cursor=pointer]
+            - 'button "Open cart panel, items in cart: 0" [ref=f24e66] [cursor=pointer]':
+              - img [ref=f24e68]: "0"
+    - main [ref=f24e72]:
+      - generic [ref=f24e73]:
+        - generic [ref=f24e74]:
+          - generic [ref=f24e76]:
+            - generic [ref=f24e77]:
+              - figure:
+                - img "glass of hot coffee on table" [ref=f24e78]
+            - generic [ref=f24e79]:
+              - generic [ref=f24e80]:
+                - generic [ref=f24e81]:
+                  - 'heading "NEW ARRIVAL: GUATEMALA ANTIGUA VANDALUZ" [level=1] [ref=f24e82]'
+                  - paragraph [ref=f24e83]: Deep brown sugar and rich plum notes layer over a smooth, medium body in this washed lot from Vandaluz Farm in Antigua.
+                - list [ref=f24e85]:
+                  - listitem [ref=f24e86]:
+                    - button "Slide 1 (Current Slide)" [ref=f24e87] [cursor=pointer]:
+                      - generic [ref=f24e88]: Slide 1
+                      - text: "01"
+                      - generic [ref=f24e89]: (Current Slide)
+                  - listitem [ref=f24e90]:
+                    - button "Slide 2" [ref=f24e91] [cursor=pointer]: "02"
+                  - listitem [ref=f24e93]:
+                    - button "Slide 3" [ref=f24e94] [cursor=pointer]: "03"
+              - link "Shop Guatemala" [ref=f24e98] [cursor=pointer]:
+                - /url: /us/eng/product/guatemala-antigua-josue-morales
+          - generic [ref=f24e100]:
+            - figure [ref=f24e102]:
+              - img "blue bottle notes in repose vinyl launch" [ref=f24e103]
+            - generic [ref=f24e104]:
+              - generic [ref=f24e105]:
+                - generic [ref=f24e106]:
+                  - heading "NOTES IN REPOSE. OUT NOW." [level=1] [ref=f24e107]
+                  - paragraph [ref=f24e108]: A collectible vinyl featuring eleven modern jazz compositions from nine global cities we call home.
+                - list [ref=f24e110]:
+                  - listitem [ref=f24e111]:
+                    - button "Slide 1 (Current Slide)" [ref=f24e112] [cursor=pointer]:
+                      - generic [ref=f24e113]: Slide 1
+                      - text: "01"
+                      - generic [ref=f24e114]: (Current Slide)
+                  - listitem [ref=f24e115]:
+                    - button "Slide 2" [ref=f24e116] [cursor=pointer]: "02"
+                  - listitem [ref=f24e118]:
+                    - button "Slide 3" [ref=f24e119] [cursor=pointer]: "03"
+              - link "Shop the Vinyl" [ref=f24e123] [cursor=pointer]:
+                - /url: /us/eng/product/notes-in-repose-vinyl
+          - generic [ref=f24e125]:
+            - figure [ref=f24e127]:
+              - img "fellow opus conical burr grinder and coffee beans on shelf" [ref=f24e128]
+            - generic [ref=f24e129]:
+              - generic [ref=f24e130]:
+                - generic [ref=f24e131]:
+                  - heading "SAVOR THE ART OF SLOW LIVING" [level=1] [ref=f24e132]
+                  - paragraph [ref=f24e133]: Renew your brew rituals this fall with thoughtfully crafted brew tools, coffees, drinkware and more.
+                - list [ref=f24e135]:
+                  - listitem [ref=f24e136]:
+                    - button "Slide 1 (Current Slide)" [ref=f24e137] [cursor=pointer]:
+                      - generic [ref=f24e138]: Slide 1
+                      - text: "01"
+                      - generic [ref=f24e139]: (Current Slide)
+                  - listitem [ref=f24e140]:
+                    - button "Slide 2" [ref=f24e141] [cursor=pointer]: "02"
+                  - listitem [ref=f24e143]:
+                    - button "Slide 3" [ref=f24e144] [cursor=pointer]: "03"
+              - link "Elevate your Ritual" [ref=f24e148] [cursor=pointer]:
+                - /url: /us/eng/shop/brewing-rituals
+        - list:
+          - listitem:
+            - img "glass of hot coffee on table"
+          - listitem:
+            - img "blue bottle notes in repose vinyl launch"
+          - listitem:
+            - img "fellow opus conical burr grinder and coffee beans on shelf"
+        - generic:
+          - button "Previous background image" [ref=f24e149] [cursor=pointer]
+          - button "Next background image" [ref=f24e153] [cursor=pointer]
+      - generic [ref=f24e157]:
+        - region [ref=f24e158]:
+          - heading "New and Trending" [level=2] [ref=f24e160]
+          - generic [ref=f24e161]:
+            - button "previous slide" [ref=f24e163] [cursor=pointer]
+            - button "next slide" [ref=f24e168] [cursor=pointer]
+            - list "New and Trending" [ref=f24e172]:
+              - listitem "1 of 11" [ref=f24e173]:
+                - generic [ref=f24e174]:
+                  - link "Leaving Soon Costa Rica Tarrazú La Lia Black Honey $17 Caramel, Strawberry, Hibiscus Light Roast, Black Honey" [ref=f24e175] [cursor=pointer]:
+                    - /url: /us/eng/product/costa-rica-tarrazu-la-lia-black-honey?a_oID=costa-rica-tarrazu-la-lia-black-honey
+                    - generic [ref=f24e176]: Leaving Soon
+                    - figure [ref=f24e179]
+                    - generic [ref=f24e183]:
+                      - generic [ref=f24e184]:
+                        - heading "Costa Rica Tarrazú La Lia Black Honey" [level=3] [ref=f24e185]
+                        - generic [ref=f24e186]: $17
+                      - generic [ref=f24e187]: Caramel, Strawberry, Hibiscus
+                      - paragraph [ref=f24e188]: Light Roast, Black Honey
+                  - button "Add to Cart Costa Rica Tarrazú La Lia Black Honey" [ref=f24e189] [cursor=pointer]: Add to Cart
+              - listitem "2 of 11" [ref=f24e191]:
+                - generic [ref=f24e192]:
+                  - link "Limited Edition Notes in Repose Vinyl $49.50 Our First Album, Brewed for Deep Listening Limited-Edition Vinyl" [ref=f24e193] [cursor=pointer]:
+                    - /url: /us/eng/product/notes-in-repose-vinyl?a_oID=notes-in-repose-vinyl
+                    - generic [ref=f24e194]: Limited Edition
+                    - figure [ref=f24e197]
+                    - generic [ref=f24e201]:
+                      - generic [ref=f24e202]:
+                        - heading "Notes in Repose Vinyl" [level=3] [ref=f24e203]
+                        - generic [ref=f24e204]: $49.50
+                      - generic [ref=f24e205]: Our First Album, Brewed for Deep Listening
+                      - paragraph [ref=f24e206]: Limited-Edition Vinyl
+                  - button "Add to Cart Notes in Repose Vinyl" [ref=f24e207] [cursor=pointer]: Add to Cart
+              - listitem "3 of 11" [ref=f24e209]:
+                - generic [ref=f24e210]:
+                  - link "New Guatemala Antigua Vandaluz $17 Brown Sugar, Plum, Rose Medium Roast" [ref=f24e211] [cursor=pointer]:
+                    - /url: /us/eng/product/guatemala-antigua-josue-morales?a_oID=guatemala-antigua-josue-morales
+                    - generic [ref=f24e212]: New
+                    - figure [ref=f24e215]
+                    - generic [ref=f24e219]:
+                      - generic [ref=f24e220]:
+                        - heading "Guatemala Antigua Vandaluz" [level=3] [ref=f24e221]
+                        - generic [ref=f24e222]: $17
+                      - generic [ref=f24e223]: Brown Sugar, Plum, Rose
+                      - paragraph [ref=f24e224]: Medium Roast
+                  - button "Add to Cart Guatemala Antigua Vandaluz" [ref=f24e225] [cursor=pointer]: Add to Cart
+              - listitem "4 of 11" [ref=f24e227]:
+                - generic [ref=f24e228]:
+                  - link "Bundle & Save Signature Blends Trio $64 Three Iconic Blends Showcasing the Essential Tastes of Blue Bottle Bundle and Save, $68 Value" [ref=f24e229] [cursor=pointer]:
+                    - /url: /us/eng/product/signature-blends-trio?a_oID=signature-blends-trio
+                    - generic [ref=f24e230]: Bundle & Save
+                    - figure [ref=f24e233]
+                    - generic [ref=f24e237]:
+                      - generic [ref=f24e238]:
+                        - heading "Signature Blends Trio" [level=3] [ref=f24e239]
+                        - generic [ref=f24e240]: $64
+                      - generic [ref=f24e241]: Three Iconic Blends Showcasing the Essential Tastes of Blue Bottle
+                      - paragraph [ref=f24e242]: Bundle and Save, $68 Value
+                  - button "Add to Cart Signature Blends Trio" [ref=f24e243] [cursor=pointer]: Add to Cart
+              - listitem "5 of 11" [ref=f24e245]:
+                - generic [ref=f24e246]:
+                  - link "Mexico Chiapas Finca Santa Cruz $19 Caramel, Vanilla, Orange Zest Medium Roast" [ref=f24e247] [cursor=pointer]:
+                    - /url: /us/eng/product/mexico-chiapas-finca-santa-cruz?a_oID=mexico-chiapas-finca-santa-cruz
+                    - figure [ref=f24e249]
+                    - generic [ref=f24e253]:
+                      - generic [ref=f24e254]:
+                        - heading "Mexico Chiapas Finca Santa Cruz" [level=3] [ref=f24e255]
+                        - generic [ref=f24e256]: $19
+                      - generic [ref=f24e257]: Caramel, Vanilla, Orange Zest
+                      - paragraph [ref=f24e258]: Medium Roast
+                  - button "Add to Cart Mexico Chiapas Finca Santa Cruz" [ref=f24e259] [cursor=pointer]: Add to Cart
+              - listitem "6 of 11" [ref=f24e261]:
+                - generic [ref=f24e262]:
+                  - link "Best Seller Hayes Valley Espresso $22 Baking Chocolate, Orange Zest, Brown Sugar Dark Roast" [ref=f24e263] [cursor=pointer]:
+                    - /url: /us/eng/product/hayes-valley-espresso?a_oID=hayes-valley-espresso
+                    - generic [ref=f24e264]: Best Seller
+                    - figure [ref=f24e267]
+                    - generic [ref=f24e271]:
+                      - generic [ref=f24e272]:
+                        - heading "Hayes Valley Espresso" [level=3] [ref=f24e273]
+                        - generic [ref=f24e274]: $22
+                      - generic [ref=f24e275]: Baking Chocolate, Orange Zest, Brown Sugar
+                      - paragraph [ref=f24e276]: Dark Roast
+                  - button "Add to Cart Hayes Valley Espresso" [ref=f24e277] [cursor=pointer]: Add to Cart
+              - listitem "7 of 11" [ref=f24e279]:
+                - generic [ref=f24e280]:
+                  - link "Best Seller Craft Instant Espresso $28 Dark Chocolate, Molasses, Toasted Malt Cafe-Quality Espresso at Home" [ref=f24e281] [cursor=pointer]:
+                    - /url: /us/eng/product/craft-instant-coffee-bold?a_oID=craft-instant-coffee-bold
+                    - generic [ref=f24e282]: Best Seller
+                    - figure [ref=f24e285]
+                    - generic [ref=f24e289]:
+                      - generic [ref=f24e290]:
+                        - heading "Craft Instant Espresso" [level=3] [ref=f24e291]
+                        - generic [ref=f24e292]: $28
+                      - generic [ref=f24e293]: Dark Chocolate, Molasses, Toasted Malt
+                      - paragraph [ref=f24e294]: Cafe-Quality Espresso at Home
+                  - button "Add to Cart Craft Instant Espresso" [ref=f24e295] [cursor=pointer]: Add to Cart
+              - listitem "8 of 11" [ref=f24e297]:
+                - generic [ref=f24e298]:
+                  - link "Giant Steps $22 Cocoa, Toasted Marshmallow, Graham Cracker Dark Roast" [ref=f24e299] [cursor=pointer]:
+                    - /url: /us/eng/product/giant-steps?a_oID=giant-steps
+                    - figure [ref=f24e301]
+                    - generic [ref=f24e305]:
+                      - generic [ref=f24e306]:
+                        - heading "Giant Steps" [level=3] [ref=f24e307]
+                        - generic [ref=f24e308]: $22
+                      - generic [ref=f24e309]: Cocoa, Toasted Marshmallow, Graham Cracker
+                      - paragraph [ref=f24e310]: Dark Roast
+                  - button "Add to Cart Giant Steps" [ref=f24e311] [cursor=pointer]: Add to Cart
+              - listitem "9 of 11" [ref=f24e313]:
+                - generic [ref=f24e314]:
+                  - link "Best Seller Bright Craft Instant Coffee $28 Blueberry, Lemon Zest, Golden Raisin Uniquely Light-Roasted Instant Coffee" [ref=f24e315] [cursor=pointer]:
+                    - /url: /us/eng/product/craft-instant-coffee-bright?a_oID=craft-instant-coffee-bright
+                    - generic [ref=f24e316]: Best Seller
+                    - figure [ref=f24e319]
+                    - generic [ref=f24e323]:
+                      - generic [ref=f24e324]:
+                        - heading "Bright Craft Instant Coffee" [level=3] [ref=f24e325]
+                        - generic [ref=f24e326]: $28
+                      - generic [ref=f24e327]: Blueberry, Lemon Zest, Golden Raisin
+                      - paragraph [ref=f24e328]: Uniquely Light-Roasted Instant Coffee
+                  - button "Add to Cart Bright Craft Instant Coffee" [ref=f24e329] [cursor=pointer]: Add to Cart
+              - listitem "10 of 11" [ref=f24e331]:
+                - generic [ref=f24e332]:
+                  - link "Best Seller Fellow Carter Move Mug in Fog Grey $36 An Elegant Vessel for Freshly Brewed Coffee 12 oz Wide-Mouth Travel Mug" [ref=f24e333] [cursor=pointer]:
+                    - /url: /us/eng/product/fellow-carter-move-fog-grey-12oz-holiday?a_oID=fellow-carter-move-fog-grey-12oz-holiday
+                    - generic [ref=f24e334]: Best Seller
+                    - figure [ref=f24e337]
+                    - generic [ref=f24e341]:
+                      - generic [ref=f24e342]:
+                        - heading "Fellow Carter Move Mug in Fog Grey" [level=3] [ref=f24e343]
+                        - generic [ref=f24e344]: $36
+                      - generic [ref=f24e345]: An Elegant Vessel for Freshly Brewed Coffee
+                      - paragraph [ref=f24e346]: 12 oz Wide-Mouth Travel Mug
+                  - button "Add to Cart Fellow Carter Move Mug in Fog Grey" [ref=f24e347] [cursor=pointer]: Add to Cart
+              - listitem "11 of 11" [ref=f24e349]:
+                - generic [ref=f24e350]:
+                  - link "Clear Cold Tumbler $34 Made for Sipping with Style 20 oz Clear Tumbler with Straw Lid" [ref=f24e351] [cursor=pointer]:
+                    - /url: /us/eng/product/clear-cold-tumbler?a_oID=clear-cold-tumbler
+                    - figure [ref=f24e353]
+                    - generic [ref=f24e357]:
+                      - generic [ref=f24e358]:
+                        - heading "Clear Cold Tumbler" [level=3] [ref=f24e359]
+                        - generic [ref=f24e360]: $34
+                      - generic [ref=f24e361]: Made for Sipping with Style
+                      - paragraph [ref=f24e362]: 20 oz Clear Tumbler with Straw Lid
+                  - button "Add to Cart Clear Cold Tumbler" [ref=f24e363] [cursor=pointer]: Add to Cart
+        - link "Shop New and Trending" [ref=f24e366] [cursor=pointer]:
+          - /url: /us/eng/shop/best-sellers
+      - generic: Shop Coffee
+      - generic [ref=f24e368]:
+        - generic [ref=f24e370]:
+          - generic [ref=f24e371]:
+            - heading "NOTES IN REPOSE IS HERE" [level=2] [ref=f24e372]
+            - paragraph [ref=f24e373]: "Years in the making, Notes in Repose is a limited-edition vinyl featuring eleven original jazz compositions from nine global cities around the world we call home — a genre-fluid collection of soulful grooves, quiet improvisations and unexpected sounds.Like every Signature Blend, it brings individual origins and notes together into one expressive composition. The result is a view into jazz today: singular voices, local perspectives and sounds rooted in the character of each city."
+          - link "Shop The Vinyl" [ref=f24e375] [cursor=pointer]:
+            - /url: /us/eng/product/notes-in-repose-vinyl
+        - figure [ref=f24e377]:
+          - img "blue bottle notes in repose vinyl sits on coffee table with record player" [ref=f24e381]
+      - generic [ref=f24e382]:
+        - heading "Shop By Collection" [level=2] [ref=f24e383]
+        - list [ref=f24e384]:
+          - listitem [ref=f24e385]:
+            - link "signature blends The Essential Tastes of Blue Bottle" [ref=f24e386] [cursor=pointer]:
+              - /url: /us/eng/collection/blends
+              - figure [ref=f24e388]
+              - heading "signature blends" [level=3] [ref=f24e392]
+              - generic [ref=f24e393]: The Essential Tastes of Blue Bottle
+          - listitem [ref=f24e394]:
+            - link "bring blue bottle home Small-Batch, Artisanal Syrups" [ref=f24e395] [cursor=pointer]:
+              - /url: /us/eng/shop/at-home-syrups
+              - figure [ref=f24e397]
+              - heading "bring blue bottle home" [level=3] [ref=f24e401]
+              - generic [ref=f24e402]: Small-Batch, Artisanal Syrups
+          - listitem [ref=f24e403]:
+            - link "Shop Drinkware Glassware, Ceramics, and More" [ref=f24e404] [cursor=pointer]:
+              - /url: /us/eng/shop/drinkware
+              - figure [ref=f24e406]
+              - heading "Shop Drinkware" [level=3] [ref=f24e410]
+              - generic [ref=f24e411]: Glassware, Ceramics, and More
+          - listitem [ref=f24e412]:
+            - link "Brew Tools Elevate Your Daily Rituals" [ref=f24e413] [cursor=pointer]:
+              - /url: /us/eng/shop/brew-tools
+              - figure [ref=f24e415]
+              - heading "Brew Tools" [level=3] [ref=f24e419]
+              - generic [ref=f24e420]: Elevate Your Daily Rituals
+      - generic [ref=f24e421]:
+        - figure [ref=f24e423]:
+          - img "blue bottle coffee craft hojicha and matcha latte" [ref=f24e427]
+        - generic [ref=f24e429]:
+          - generic [ref=f24e430]:
+            - 'heading "fall rituals: Craft matcha" [level=2] [ref=f24e431]'
+            - paragraph [ref=f24e432]: Our ceremonial-grade Craft Matcha offers a perfect way to renew your routines as the rhythms of fall set in. Sourced from Rishouen Teahouse in Japan, this tea delivers rich, comforting flavors made to elevate your daily cup.
+          - link "Shop Japanese Tea" [ref=f24e434] [cursor=pointer]:
+            - /url: /us/eng/shop/matcha
+      - generic [ref=f24e435]:
+        - generic [ref=f24e437]:
+          - generic [ref=f24e438]:
+            - heading "Blue Bottle at Home Specialty Coffee Subscriptions" [level=2] [ref=f24e439]
+            - paragraph [ref=f24e440]: Discover unparalleled, freshly roasted single origin coffees, Signature Blends, and Craft Matcha — with a flexible delivery schedule you can pause, change, or cancel anytime.
+          - link "Shop Subscriptions" [ref=f24e442] [cursor=pointer]:
+            - /url: /us/eng/subscriptions
+          - list [ref=f24e443]:
+            - listitem [ref=f24e444]:
+              - heading "YOUR DAILY RITUAL" [level=4] [ref=f24e445]
+              - paragraph [ref=f24e446]: Explore a rotating assortment of distinctive coffees, or keep your favorite coffee or tea on repeat.
+            - listitem [ref=f24e447]:
+              - heading "EXTRA SAVINGS" [level=4] [ref=f24e448]
+              - list [ref=f24e450]:
+                - listitem [ref=f24e451]: Up to 17% off multi-bag orders
+                - listitem [ref=f24e452]: "$5 off Exceedingly Rare coffees with code: xrsubs"
+                - listitem [ref=f24e453]: Free shipping on subscription orders
+                - listitem [ref=f24e454]: Subscriber add-on store access for 10% off additional products
+                - listitem [ref=f24e455]: Subscriber-only discounts
+            - listitem [ref=f24e456]:
+              - heading "EXCLUSIVE ACCESS" [level=4] [ref=f24e457]
+              - paragraph [ref=f24e458]: Early access to major launches, rare and limited coffees, and curated tasting experiences.
+        - figure [ref=f24e460]:
+          - img "Blue Bottle Coffee Whole Bean Specialty Coffee Subscription Bag next to glass of coffee" [ref=f24e464]
+      - generic [ref=f24e465]:
+        - region [ref=f24e466]:
+          - heading "Blue Bottle Cafes" [level=2] [ref=f24e467]
+          - generic [ref=f24e468]:
+            - button "previous slide" [ref=f24e470] [cursor=pointer]
+            - button "next slide" [ref=f24e475] [cursor=pointer]
+            - list "Blue Bottle Cafes" [ref=f24e479]:
+              - listitem "1 of 4" [ref=f24e480]:
+                - figure "experience kyoto-style espresso" [ref=f24e481]:
+                  - img "blue bottle coffee kyoto style espresso drinks" [ref=f24e485]
+              - listitem "2 of 4" [ref=f24e487]:
+                - figure "Roseville, California" [ref=f24e488]:
+                  - img "roseville galleria blue bottle coffee cafe" [ref=f24e492]
+              - listitem "3 of 4" [ref=f24e494]:
+                - figure "Oakbrook Center, Chicago" [ref=f24e495]:
+                  - img "Oakbrook Center Cafe" [ref=f24e499]
+              - listitem "4 of 4" [ref=f24e501]:
+                - figure "Fashion Show Las Vegas" [ref=f24e502]:
+                  - img "blue bottle coffee cafe fashion show las vegas" [ref=f24e506]
+            - list [ref=f24e509]:
+              - listitem [ref=f24e510]:
+                - generic [ref=f24e511]:
+                  - generic [ref=f24e512]: Slide 1
+                  - text: "01"
+                  - generic [ref=f24e513]: (Current Slide)
+              - listitem [ref=f24e514]:
+                - generic [ref=f24e515]:
+                  - generic [ref=f24e516]: Slide 2
+                  - text: "02"
+              - listitem [ref=f24e517]:
+                - generic [ref=f24e518]:
+                  - generic [ref=f24e519]: Slide 3
+                  - text: "03"
+              - listitem [ref=f24e520]:
+                - generic [ref=f24e521]:
+                  - generic [ref=f24e522]: Slide 4
+                  - text: "04"
+        - generic [ref=f24e523]:
+          - heading "Join Blue Bottle Membership" [level=2] [ref=f24e524]
+          - paragraph [ref=f24e525]: Earn points on every cup — redeemable for free drinks to enjoy yourself or to gift to someone else.
+        - link "Find a Cafe" [ref=f24e527] [cursor=pointer]:
+          - /url: /us/eng/cafes
+      - generic [ref=f24e528]:
+        - heading "Explore Our Brew Guides" [level=2] [ref=f24e529]
+        - region [ref=f24e530]:
+          - heading "Explore Our Brew Guides" [level=2] [ref=f24e531]
+          - list "Explore Our Brew Guides" [ref=f24e533]:
+            - listitem "1 of 2" [ref=f24e534]:
+              - generic [ref=f24e535]:
+                - figure [ref=f24e537]:
+                  - img "pour over and coffee cup" [ref=f24e541]
+                - generic [ref=f24e542]:
+                  - generic [ref=f24e543]:
+                    - heading "POUR OVER" [level=3] [ref=f24e544]
+                    - paragraph [ref=f24e545]: Our guide to this timeless, iconic method.
+                  - link "Learn More" [ref=f24e548] [cursor=pointer]:
+                    - /url: /us/eng/brew-guides/pour-over
+            - listitem "2 of 2" [ref=f24e549]:
+              - generic [ref=f24e550]:
+                - figure [ref=f24e552]:
+                  - img "cup of coffee in glass mug" [ref=f24e556]
+                - generic [ref=f24e557]:
+                  - generic [ref=f24e558]:
+                    - heading "craft instant recipes" [level=3] [ref=f24e559]
+                    - paragraph [ref=f24e560]: Make cafe-quality iced lattes and more.
+                  - link "Learn More" [ref=f24e563] [cursor=pointer]:
+                    - /url: /us/eng/brew-guides/craft-instant-coffee-recipes
+        - link "Explore Brew Guides" [ref=f24e566] [cursor=pointer]:
+          - /url: /us/eng/brew-guides
+      - button "Back to top" [ref=f24e567] [cursor=pointer]
+    - contentinfo [ref=f24e571]:
+      - heading [level=2] [ref=f24e572]:
+        - img "Blue Bottle Coffee" [ref=f24e574]
+      - generic [ref=f24e594]:
+        - list [ref=f24e595]:
+          - listitem [ref=f24e596]:
+            - generic [ref=f24e597]:
+              - heading "COMPANY" [level=3] [ref=f24e598]
+              - list [ref=f24e599]:
+                - listitem [ref=f24e600]:
+                  - link "Locations" [ref=f24e602] [cursor=pointer]:
+                    - /url: /us/eng/cafes
+                - listitem [ref=f24e603]:
+                  - link "Careers" [ref=f24e605] [cursor=pointer]:
+                    - /url: /us/eng/careers
+                - listitem [ref=f24e606]:
+                  - link "Accessibility" [ref=f24e608] [cursor=pointer]:
+                    - /url: /us/eng/accessibility
+          - listitem [ref=f24e609]:
+            - generic [ref=f24e610]:
+              - heading "LEARN" [level=3] [ref=f24e611]
+              - list [ref=f24e612]:
+                - listitem [ref=f24e613]:
+                  - link "Brew Guides" [ref=f24e615] [cursor=pointer]:
+                    - /url: /us/eng/brew-guides
+                - listitem [ref=f24e616]:
+                  - link "Our Brand" [ref=f24e618] [cursor=pointer]:
+                    - /url: /us/eng/our-story
+                - listitem [ref=f24e619]:
+                  - link "Our Coffee" [ref=f24e621] [cursor=pointer]:
+                    - /url: /us/eng/our-coffee
+                - listitem [ref=f24e622]:
+                  - link "Sustainability" [ref=f24e624] [cursor=pointer]:
+                    - /url: /us/eng/blue-bottle-sustainability
+                - listitem [ref=f24e625]:
+                  - generic [ref=f24e626]:
+                    - link "Virtual Classes" [ref=f24e627] [cursor=pointer]:
+                      - /url: https://classes.bluebottlecoffee.com/
+                    - img "Opens an external website" [ref=f24e628]
+                - listitem [ref=f24e630]:
+                  - link "Blue Bottle Studio" [ref=f24e632] [cursor=pointer]:
+                    - /url: /us/eng/blue-bottle-studio
+                - listitem [ref=f24e633]:
+                  - link "Find Blue Bottle in Store" [ref=f24e635] [cursor=pointer]:
+                    - /url: /us/eng/where-to-buy-blue-bottle-coffee
+          - listitem [ref=f24e636]:
+            - generic [ref=f24e637]:
+              - heading "MORE" [level=3] [ref=f24e638]
+              - list [ref=f24e639]:
+                - listitem [ref=f24e640]:
+                  - generic [ref=f24e641]:
+                    - link "Contact Us" [ref=f24e642] [cursor=pointer]:
+                      - /url: https://support.bluebottlecoffee.com/hc/en-us/requests/new
+                    - img "Opens an external website" [ref=f24e643]
+                - listitem [ref=f24e645]:
+                  - generic [ref=f24e646]:
+                    - link "Help Center" [ref=f24e647] [cursor=pointer]:
+                      - /url: https://support.bluebottlecoffee.com/hc/en-us
+                    - img "Opens an external website" [ref=f24e648]
+                - listitem [ref=f24e650]:
+                  - link "FAQs" [ref=f24e652] [cursor=pointer]:
+                    - /url: /us/eng/FAQ
+                - listitem [ref=f24e653]:
+                  - link "Gift Cards" [ref=f24e655] [cursor=pointer]:
+                    - /url: /us/eng/product/online-gift-card
+                - listitem [ref=f24e656]:
+                  - link "Gift Subscriptions" [ref=f24e658] [cursor=pointer]:
+                    - /url: /us/eng/subscriptions/gift-subscriptions
+        - generic [ref=f24e659]:
+          - form [ref=f24e660]:
+            - heading "Subscribe and Stay Updated" [level=3] [ref=f24e661]
+            - generic: Enter your email address
+            - paragraph [ref=f24e663]: Join our email newsletter for exclusive offers, Blue Bottle news, events, and first access to our most exciting releases. Plus, get complimentary shipping on your first purchase when you sign up.
+            - generic [ref=f24e664]:
+              - textbox "Enter your email address" [ref=f24e665]
+              - button "sign up" [ref=f24e666] [cursor=pointer]
+          - link "Privacy Policy & Terms" [ref=f24e671] [cursor=pointer]:
+            - /url: /us/eng/privacy
+          - list [ref=f24e672]:
+            - listitem [ref=f24e673]:
+              - link [ref=f24e674] [cursor=pointer]:
+                - /url: https://www.facebook.com/bluebottlecoffee
+                - img "Go to Blue Bottle Facebook" [ref=f24e676]
+            - listitem [ref=f24e678]:
+              - link [ref=f24e679] [cursor=pointer]:
+                - /url: https://www.twitter.com/bluebottleroast
+                - img "Go to Blue Bottle Twitter" [ref=f24e681]
+            - listitem [ref=f24e683]:
+              - link [ref=f24e684] [cursor=pointer]:
+                - /url: https://www.instagram.com/bluebottle
+                - img "Go to Blue Bottle Instagram" [ref=f24e686]
+            - listitem [ref=f24e689]:
+              - link [ref=f24e690] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UCyki4e6RG84BT_xzi4oYkRw
+                - img "Go to Blue Bottle Youtube" [ref=f24e692]
+      - generic [ref=f24e695]:
+        - list [ref=f24e697]:
+          - listitem [ref=f24e698]:
+            - link "Terms of Use" [ref=f24e700] [cursor=pointer]:
+              - /url: /us/eng/terms-of-use
+          - listitem [ref=f24e701]:
+            - link "Privacy Policy" [ref=f24e703] [cursor=pointer]:
+              - /url: /us/eng/privacy
+          - listitem [ref=f24e704]:
+            - link "Notice at Collection" [ref=f24e706] [cursor=pointer]:
+              - /url: /us/eng/notice/notice-at-collection
+          - listitem [ref=f24e707]:
+            - link "Your Privacy Choices" [ref=f24e709] [cursor=pointer]:
+              - /url: "#"
+        - generic [ref=f24e723]: © 2026 Blue Bottle Coffee
+  - alert [ref=f24e724]
