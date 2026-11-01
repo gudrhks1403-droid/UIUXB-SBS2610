@@ -1,0 +1,14 @@
+[     603ms] [LOG] swiper-pagination-bullet @ https://kr.bluebottlecoffee.com/cdn/shop/t/2/assets/bbck-theme.js?v=31988092689346503921722480815:0
+[     604ms] [LOG] index 0 @ https://kr.bluebottlecoffee.com/cdn/shop/t/2/assets/bbck-theme.js?v=31988092689346503921722480815:0
+[     604ms] [LOG] swiper-pagination-bullet @ https://kr.bluebottlecoffee.com/cdn/shop/t/2/assets/bbck-theme.js?v=31988092689346503921722480815:0
+[     604ms] [LOG] index 1 @ https://kr.bluebottlecoffee.com/cdn/shop/t/2/assets/bbck-theme.js?v=31988092689346503921722480815:0
+[     604ms] [LOG] swiper-pagination-bullet @ https://kr.bluebottlecoffee.com/cdn/shop/t/2/assets/bbck-theme.js?v=31988092689346503921722480815:0
+[     604ms] [LOG] index 2 @ https://kr.bluebottlecoffee.com/cdn/shop/t/2/assets/bbck-theme.js?v=31988092689346503921722480815:0
+[     605ms] [LOG] {loop: true} @ https://kr.bluebottlecoffee.com/cdn/shop/t/2/assets/bbck-theme.js?v=31988092689346503921722480815:0
+[     610ms] [WARNING] In a sandboxed environment, addEventListener may not behave as expected. @ https://kr.bluebottlecoffee.com/cdn/wpm/s610a19cewf693d529pf324840bm6169d9b4m.js:0
+[     622ms] [WARNING] In a sandboxed environment, addEventListener may not behave as expected. @ https://kr.bluebottlecoffee.com/cdn/wpm/s610a19cewf693d529pf324840bm6169d9b4m.js:0
+[     801ms] [LOG] bootstap @ https://cdn.shopify.com/extensions/01a18b57-c33b-7098-95a4-8366df9bea35/gift-box-builder-1-502/assets/easy-bundle-min.js:0
+[     862ms] [LOG] ChannelIO script loaded with plugin key: 4a7023e0-203e-430b-bd7e-cf76617bfc5d @ https://kr.bluebottlecoffee.com/:4681
+[    3318ms] [INFO] pageView @ https://kr.bluebottlecoffee.com/web-pixels@610a19cewf693d529pf324840bm6169d9b4/custom/web-pixel-36733181@2/sandbox/modern/:24
+[    3323ms] [INFO] pageView naver @ https://kr.bluebottlecoffee.com/web-pixels@610a19cewf693d529pf324840bm6169d9b4/custom/web-pixel-38568189@25/sandbox/modern/:32
+[ 3484634ms] [ERROR] Failed to load resource: net::ERR_NETWORK_IO_SUSPENDED @ https://gw.channel.io/front/routes/info?channelId=174545&type=socket&subType=clientFront:0
