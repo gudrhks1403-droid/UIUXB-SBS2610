@@ -51,3 +51,45 @@
 
 - 정답은 **1600px PC 화면** 기준입니다. `.con` 바깥 너비가 1440px이라 화면이 그보다 좁으면 아이콘이 잘리고 로고가 가운데가 아닌 것처럼 보입니다. 브라우저를 최대화하거나 `Ctrl + -`로 축소해서 확인하세요.
 - **한 줄 요약:** 첫 작업은 grid로 3칸을 나눠 배치했고, 정답은 flex + 고정 너비(520px)로 배치했습니다. 정답은 `<nav>`, `<h1>`, `<a>` 같은 의미 있는 태그를 씁니다.
+
+## 2026-11-04 추가: 메인 배너 사진
+
+`index.html` / `style.css`의 `<main>` 구간에 원본 블루보틀 코리아 메인 배너 사진을 넣었습니다. (글자·버튼 영역 `banner-txt-wrap`은 아직 없음, 사진만)
+
+### HTML (`index.html`)
+
+```html
+<main>
+    <img class="banner-img" src="./images/main-banner.jpg" alt="2026 홀리데이 컬렉션">
+</main>
+```
+
+### CSS (`style.css`)
+
+```css
+/* 메인 배너 */
+.banner-img {
+    display: block;
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+```
+
+| 속성 | 역할 |
+|---|---|
+| `display: block` | img는 기본이 inline이라 아래에 작은 틈이 생김 → block으로 없앰 |
+| `width: 100%` | 화면 가로 전체를 채움 |
+| `height: 800px` | 높이 고정 |
+| `object-fit: cover` | 비율을 유지한 채 넘치는 부분을 잘라서 채움 (찌그러짐 방지) |
+
+### 그 밖에 바뀐 것
+
+- `images/main-banner.jpg` 추가 (원본 사이트 PC용 배너, 1680×892)
+- `main`에 있던 확인용 파란 배경 / 빨간 테두리 삭제
+
+### 원본 사이트 참고 (나중에 글자 넣을 때)
+
+- 원본은 사진 위에 `.banner-txt-wrap`을 `position: absolute`로 겹쳐 올림 (부모는 `position: relative`)
+- `.banner-txt-wrap`: `display: flex`, `padding: 128px 112px`, 글자는 왼쪽 아래 배치
+- 제목 40px / 설명 18px / 버튼 290 × 50px 흰 배경, 글자색 흰색
