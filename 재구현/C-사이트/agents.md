@@ -17,7 +17,7 @@
 | 로고 | `<div class="header-logo"><img></div>` | `<h1 class="logo-box"><a><img></a></h1>` | 로고는 사이트 제목이라 `<h1>`, 누르면 홈으로 가게 `<a>`로 감쌈 |
 | 로고 alt | `블루보틀 커피` | `BLUE BOTTLE COFFEE` | |
 | 아이콘 감싸기 | `.header-icons` 하나 | `.header-util` 안에 `.header-icons` | 바깥 박스로 너비 520px를 잡아 로고를 가운데로 보냄 |
-| main / footer | `<main>메인</main>`, `<footer>하단</footer>` | 없음 | 정답은 상단(BBC-01)만 만든 상태 |
+| main / footer | `<main>` 있음, `<footer>하단</footer>` 있음 | `<main>` 있음, footer 없음 | main 구간 비교는 아래 "2026-11-09 전체 비교" 참고 |
 
 ## CSS 비교
 
@@ -43,9 +43,11 @@
 
 | 항목 | 정답 원본 | index_solution | 이유 |
 |---|---|---|---|
-| 이미지 경로 | `../../image/search.svg` 등 | `images/icon-search.svg` 등 | 이 프로젝트의 이미지 폴더 기준 |
-| 링크 | `../../02_전체통합/...` | `#` | 해당 폴더가 이 프로젝트에 없음 |
-| 글꼴 | `../../font/` 로컬 파일 | CDN `@import` | font 폴더가 없음 |
+| 이미지 경로 | `../image/search.svg` 등 | `./images/icon-search.svg` 등 | 이 프로젝트의 이미지 폴더 기준 |
+| 아이콘 파일명 | `search.svg`, `account.svg`, `bag.svg` | `icon-search.svg`, `icon-account.svg`, `icon-cart.svg` | index.html과 같은 아이콘 사용 |
+| 선물 세트 사진 | `gift-set.jpg` | `gift-set-solution.jpg` | index.html의 `gift-set.jpg`와 다른 사진이라 이름 바꿔 저장 |
+| 글꼴 | `../font/` 로컬 파일 | 그대로 (`../font/`) | font 폴더가 없어 지금은 기본 글꼴로 보임 |
+| 주석 | `<!-- -->`, `/* */` 구간 설명 주석 | 모두 삭제 | |
 
 ## 참고
 
@@ -93,3 +95,39 @@
 - 원본은 사진 위에 `.banner-txt-wrap`을 `position: absolute`로 겹쳐 올림 (부모는 `position: relative`)
 - `.banner-txt-wrap`: `display: flex`, `padding: 128px 112px`, 글자는 왼쪽 아래 배치
 - 제목 40px / 설명 18px / 버튼 290 × 50px 흰 배경, 글자색 흰색
+
+## 2026-11-09 전체 비교 (main 구간 포함)
+
+태그 차이와 있고 없고만 정리했습니다.
+
+### HTML 구간별
+
+| 구간 | index.html | index_solution.html |
+|---|---|---|
+| 구간 감싸기 | `div.section-○○ > div.con` | `div#BBC-0N > div.○○ > div.con` (구간마다 id 있음) |
+| 메인 배너 | `img.banner-img`만 | `div.hero` 안에 글자 칸 `div.hero-copy`(라벨, `h2`×2, `p`, `a`) + `img.hero-image` |
+| 카테고리 / 새로운 컬렉션 | `ul > li > a` 안에 `strong` + `p` + `img` | 제목 `h2` + `span` 있음, 카드는 `div.collection-card` 안에 `img` + `h3` + `p` |
+| 인기 상품 | **없음** | `div.popular` 제목(`h2` + `a`) + 카드 4개(`img` + `p` + `h3`) |
+| 리추얼 배너 / 하사미 | `img.rituals-img`만 | `img.hasami-image` + 글자 칸(`span`, `h2`×2, `p`×2, `a`) |
+| 푸어오버 | 사진 1장 + `h2` + `ul > li`(`h3` + `p`), 제품 사진 없음 | 위: 글자 칸(`span`, `h2`×2, `p`, `a`) + 사진 / 아래: 카드 3개(`img` + `h3` + `p`) |
+| 선물 세트 | 글자 칸(`h2` + `ul > li`) → 사진 순서 | 제목(`h2` + `span`) + 사진 → 글자 칸(`h3`×2, `div.gift-item`×3, `a`) 순서 |
+| 카페 | 사진 1장 + `p` 이름 + `p` 번호(01 02 03) + 아래 `h2` 제목 | 제목(`h2` + `span`) + 카드 3개(`img` + `h3` + `a`) |
+| footer | `<footer>하단</footer>` 있음 | **없음** |
+
+- 목록: index.html은 `ul/li`를 카테고리·푸어오버·선물에 사용 / 정답은 메뉴에만 `ul/li`, 나머지는 `div` 카드
+- 링크 `a`: index.html은 카테고리에만 (`href=""`) / 정답은 메뉴·로고·버튼마다 있음
+- 소제목: index.html은 `strong`, `h2` 위주 / 정답은 카드 제목에 `h3`, 영문 라벨에 `span`
+
+### CSS
+
+| 항목 | style.css | style_solution.css |
+|---|---|---|
+| 기본 초기화 (ul, li, h, p, a, img 등) | 없음 | 있음 |
+| 글꼴 `@font-face` | 없음 | 있음 (Pretendard) |
+| 공통 `.con` 규칙 | 없음 (class만 붙어 있음) | 있음 |
+| `grid` | 헤더에 사용 | 없음 (flex만) |
+| `:hover` | 없음 | 메뉴, 버튼 링크에 있음 |
+| `footer` 스타일 | 있음 | 없음 |
+| 선택자 방식 | 태그마다 class (`.category-title`) | 부모 class + 태그 (`.collection-card h3`) |
+| 정답에만 있는 구간 | | `.hero`, `.popular`, `.hasami`, `.kit-row` / `.kit-card` |
+| 내 코드에만 있는 구간 | `.rituals-img`, `.cafe-info` / `.cafe-num`, `.category-text` | |
