@@ -24,8 +24,9 @@ header {
     object-fit: cover;
 }
 footer {
-    background-color: blue;
-    border: 1px solid red;
+    background-color: #333333;
+    padding: 80px 60px 40px;
+    color: #FDFBF7;
 }
 .header-con {
     height: 100%;
@@ -271,4 +272,33 @@ align-items: center;
     line-height: 1.4;
     text-align: center;
     margin: 40px 0 0;
+}
+.footer-menu {
+    width: 33.33%;
+}
+.footer-menu-wrap{
+    display: flex;
+    list-style: none;
+}
+
+.footer-menu-title {
+    margin-bottom: 20px;
+    margin-top: 0;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.68px;
+}
+
+.footer-menu-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.footer-menu-item {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.68px;
+    line-height: 1.4;
+    margin-bottom: 26px;
 }
