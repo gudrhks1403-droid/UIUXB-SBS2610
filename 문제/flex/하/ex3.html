@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 문제 3 - 해설</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.7; max-width: 720px; margin: 40px auto; padding: 0 20px; }
+        code { background: #f2f2f2; padding: 2px 6px; border-radius: 4px; }
+        pre { background: #272822; color: #f8f8f2; padding: 16px; border-radius: 8px; }
+        .point { background: #fff8d6; border-left: 4px solid #f0b400; padding: 12px 16px; }
+    </style>
+</head>
+<body>
+    <h1>문제 3 해설 - flex-direction / gap</h1>
+
+    <h2>정답 코드</h2>
+    <pre>.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}</pre>
+
+    <h2>설명</h2>
+    <p>
+        <code>flex-direction</code> 방향에는 두 가지 방향이 있습니다.
+        기본값은 <code>row</code>이고, <code>column</code>을 사용하게 되면 세로 레이아웃으로 사용됩니다.
+    </p>
+    <p>
+        현재 상황에서 <code>flex-direction: column</code>을 사용하면 가로(row)로 붙어 있던 버튼들이 세로(column) 방향으로 변형되면서
+        <strong>위에서 아래로 쌓이는</strong> 결과를 가질 수 있습니다.
+    </p>
+    <p>
+        여기에 <code>gap: 20px</code>을 사용하면 아이템과 아이템 <strong>사이에만</strong> 20px의 빈 공간이 생기면서
+        버튼끼리 일정한 간격을 가진 메뉴가 완성됩니다.
+    </p>
+
+    <div class="point">
+        <strong>기억하기</strong><br>
+        <code>row</code> = 가로 (기본값), <code>column</code> = 세로<br>
+        <code>gap</code>은 아이템 사이 간격만 만들어서, 맨 위·맨 아래에는 여백이 생기지 않아요. (<code>margin</code>보다 간편!)
+    </div>
+</body>
+</html>

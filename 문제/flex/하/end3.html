@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 문제 3 - 정답</title>
+    <style>
+        /* [문제 3 정답] */
+        .menu {
+            display: flex;
+            flex-direction: column; /* 정답 1: 방향을 세로로 */
+            gap: 20px;              /* 정답 2: 아이템 사이 간격 20px */
+        }
+
+        /* ---------- 문제와 같은 기본 스타일 ---------- */
+        .menu {
+            width: 200px;
+            padding: 20px;
+            background: #f1f1f1;
+        }
+        .menu button {
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            background: mediumseagreen;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>문제 3 정답</h1>
+    <p>버튼 3개가 세로로 쌓이고, 사이에 20px 간격이 생겼어요.</p>
+
+    <div class="menu">
+        <button>홈</button>
+        <button>소개</button>
+        <button>문의</button>
+    </div>
+</body>
+</html>

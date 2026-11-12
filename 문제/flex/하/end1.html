@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 문제 1 - 정답</title>
+    <style>
+        /* [문제 1 정답] */
+        .container {
+            display: flex; /* 정답: 부모에게 flex를 켜면 자식들이 가로로 나란히! */
+        }
+
+        /* ---------- 문제와 같은 기본 스타일 ---------- */
+        .container {
+            background: #eeeeee;
+            padding: 10px;
+        }
+        .box {
+            width: 80px;
+            height: 80px;
+            background: skyblue;
+            border: 2px solid #333;
+            font-size: 24px;
+            text-align: center;
+            line-height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <h1>문제 1 정답</h1>
+    <p>박스 3개가 가로로 나란히 놓였어요.</p>
+
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+</html>
