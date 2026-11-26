@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 문제 1 - 박스를 가로로 나란히</title>
+    <style>
+        /* ===================================================
+           [문제 1] 박스를 가로로 나란히 놓기  (난이도: 하)
+
+           지금 박스 3개는 위에서 아래로 쌓여 있어요.
+           .container 에 CSS를 딱 "한 줄" 추가해서
+           박스 1, 2, 3 이 가로로 나란히 놓이게 만들어 보세요!
+
+           힌트: 부모에게 flex를 켜 주면 돼요.
+           =================================================== */
+
+        .container {
+            /* 여기에 한 줄을 작성하세요 */
+
+        }
+
+        /* ---------- 아래는 수정하지 마세요 ---------- */
+        .container {
+            background: #eeeeee;
+            padding: 10px;
+        }
+        .box {
+            width: 80px;
+            height: 80px;
+            background: skyblue;
+            border: 2px solid #333;
+            font-size: 24px;
+            text-align: center;
+            line-height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <h1>문제 1. 박스를 가로로 나란히 놓기</h1>
+    <p>박스 3개가 <strong>가로로 나란히</strong> 놓이도록 CSS 한 줄을 추가하세요.</p>
+
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+</html>

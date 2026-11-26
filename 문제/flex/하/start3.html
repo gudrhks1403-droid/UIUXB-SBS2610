@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 문제 3 - 세로로 쌓고 간격 주기</title>
+    <style>
+        /* ===================================================
+           [문제 3] 메뉴를 세로로 쌓고 간격 주기  (난이도: 하)
+
+           지금 버튼 3개가 가로로 붙어 있어요.
+           .menu 에 CSS를 "두 줄" 추가해서
+           1) 버튼이 위에서 아래로(세로로) 쌓이고
+           2) 버튼 사이에 20px 간격이 생기게 만들어 보세요!
+           (display: flex 는 이미 적혀 있어요.)
+
+           힌트: flex-direction, gap
+           =================================================== */
+
+        .menu {
+            display: flex;
+            /* 여기에 두 줄을 작성하세요 */
+
+        }
+
+        /* ---------- 아래는 수정하지 마세요 ---------- */
+        .menu {
+            width: 200px;
+            padding: 20px;
+            background: #f1f1f1;
+        }
+        .menu button {
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            background: mediumseagreen;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>문제 3. 메뉴를 세로로 쌓고 간격 주기</h1>
+    <p>버튼 3개를 <strong>세로로</strong> 쌓고, 버튼 사이에 <strong>20px 간격</strong>을 주세요.</p>
+
+    <div class="menu">
+        <button>홈</button>
+        <button>소개</button>
+        <button>문의</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 문제 2 - 박스를 정가운데에</title>
+    <style>
+        /* ===================================================
+           [문제 2] 박스를 정가운데에 놓기  (난이도: 하)
+
+           회색 영역 안에 빨간 박스가 왼쪽 위에 붙어 있어요.
+           .container 에 CSS를 "두 줄" 추가해서
+           박스를 가로·세로 모두 정가운데로 옮겨 보세요!
+           (display: flex 는 이미 적혀 있어요.)
+
+           힌트: justify-content, align-items
+           =================================================== */
+
+        .container {
+            display: flex;
+            /* 여기에 두 줄을 작성하세요 */
+
+        }
+
+        /* ---------- 아래는 수정하지 마세요 ---------- */
+        .container {
+            height: 300px;
+            background: #dddddd;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background: tomato;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>문제 2. 박스를 정가운데에 놓기</h1>
+    <p>빨간 박스가 회색 영역의 <strong>가로·세로 정가운데</strong>에 오도록 CSS 두 줄을 추가하세요.</p>
+
+    <div class="container">
+        <div class="box">가운데!</div>
+    </div>
+</body>
+</html>

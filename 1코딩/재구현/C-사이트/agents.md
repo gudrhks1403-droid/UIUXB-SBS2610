@@ -1,0 +1,133 @@
+# C-사이트 (블루보틀 코리아) 비교 정리
+
+`index.html` / `style.css` (첫 작업)와 `index_solution.html` / `style_solution.css` (정답 기준)의 차이입니다.
+
+## HTML 비교
+
+| 항목 | index.html (첫 작업) | index_solution.html (정답 기준) | 차이 설명 |
+|---|---|---|---|
+| 언어 | `lang="en"` | `lang="ko"` | 한국어 사이트라 `ko`가 맞음 |
+| 제목 | `bluebottlecoffee` | `블루보틀 코리아` | |
+| 탭 아이콘 | 없음 | `<link rel="icon">` | |
+| 공지 띠 | `<div class="notice-bar">`가 **header 밖** | `<div class="announcement">`가 **header 안** | 정답은 공지도 상단 영역의 일부로 묶음 |
+| 공지 문구 | 35,000원 이상 구매 시 무료 배송 | 원두 및 커피 최대 10% 할인 번들 구매 혜택 | |
+| header | `<header>` | `<header id="BBC-01">` | 구간 번호 id로 링크 이동 가능 |
+| 메뉴 감싸기 | `<div class="header-menu">` | `<nav class="main-nav">` | 메뉴는 의미에 맞는 `<nav>` 태그 사용 |
+| 메뉴 항목 | `<li>쇼핑</li>` (글자만) | `<li><a href="#">쇼핑</a></li>` | 링크가 있어야 클릭 가능 |
+| 로고 | `<div class="header-logo"><img></div>` | `<h1 class="logo-box"><a><img></a></h1>` | 로고는 사이트 제목이라 `<h1>`, 누르면 홈으로 가게 `<a>`로 감쌈 |
+| 로고 alt | `블루보틀 커피` | `BLUE BOTTLE COFFEE` | |
+| 아이콘 감싸기 | `.header-icons` 하나 | `.header-util` 안에 `.header-icons` | 바깥 박스로 너비 520px를 잡아 로고를 가운데로 보냄 |
+| main / footer | `<main>` 있음, `<footer>하단</footer>` 있음 | `<main>` 있음, footer 없음 | main 구간 비교는 아래 "2026-11-09 전체 비교" 참고 |
+
+## CSS 비교
+
+| 항목 | style.css (첫 작업) | style_solution.css (정답 기준) | 차이 설명 |
+|---|---|---|---|
+| 글꼴 | 지정 안 함 | Pretendard | |
+| 기본 초기화 | `body { margin:0 }`만 | body, ul, li, h1~h6, p, a, button, img 모두 초기화 | 브라우저 기본 여백·밑줄 제거 |
+| 배경색 | header에만 `#FDFBF7` | body 전체에 `#fdfbf7` | |
+| 확인용 테두리 | `border: 1px solid red`, 파란 배경 | 없음 | 작업 중 확인용이라 완성본에선 뺌 |
+| 공지 띠 | 높이 30px, 글자 12px, 배경 없음 | 높이 28px, 글자 11px, 흰 배경 | |
+| 헤더 높이 | 80px | 88px | |
+| 콘텐츠 너비 | 너비 제한 없음 + padding 60px | `.con` 1400px + padding 20px, 가운데 정렬 | 정답은 공통 `.con`을 다른 구간에서도 재사용 |
+| 가로 배치 방식 | **grid** `1fr 1fr 1fr` (3등분) | **flex** + `space-between` | 정답은 수업에서 배운 flex만 사용 |
+| 로고 가운데 정렬 | grid 3등분의 가운데 칸 | 메뉴·아이콘을 둘 다 520px로 맞춰 가운데로 | 방법만 다르고 결과는 비슷 |
+| 메뉴 간격 | 40px | 32px | |
+| 메뉴 글자 | 14px, 굵기 500, 자간 0.28px | 14px | |
+| 메뉴 hover | 없음 | 파란색 `#00a1df` | |
+| 로고 크기 | 지정 안 함 (원본 크기) | 25 × 62px | |
+| 아이콘 크기 | 20 × 20px | 24 × 24px | |
+| 아이콘 간격 | 20px | 24px | |
+
+## 정답 원본과 index_solution의 차이 (폴더 구조 때문)
+
+| 항목 | 정답 원본 | index_solution | 이유 |
+|---|---|---|---|
+| 이미지 경로 | `../image/search.svg` 등 | `./images/icon-search.svg` 등 | 이 프로젝트의 이미지 폴더 기준 |
+| 아이콘 파일명 | `search.svg`, `account.svg`, `bag.svg` | `icon-search.svg`, `icon-account.svg`, `icon-cart.svg` | index.html과 같은 아이콘 사용 |
+| 선물 세트 사진 | `gift-set.jpg` | `gift-set-solution.jpg` | index.html의 `gift-set.jpg`와 다른 사진이라 이름 바꿔 저장 |
+| 글꼴 | `../font/` 로컬 파일 | 그대로 (`../font/`) | font 폴더가 없어 지금은 기본 글꼴로 보임 |
+| 주석 | `<!-- -->`, `/* */` 구간 설명 주석 | 모두 삭제 | |
+
+## 참고
+
+- 정답은 **1600px PC 화면** 기준입니다. `.con` 바깥 너비가 1440px이라 화면이 그보다 좁으면 아이콘이 잘리고 로고가 가운데가 아닌 것처럼 보입니다. 브라우저를 최대화하거나 `Ctrl + -`로 축소해서 확인하세요.
+- **한 줄 요약:** 첫 작업은 grid로 3칸을 나눠 배치했고, 정답은 flex + 고정 너비(520px)로 배치했습니다. 정답은 `<nav>`, `<h1>`, `<a>` 같은 의미 있는 태그를 씁니다.
+
+## 2026-11-04 추가: 메인 배너 사진
+
+`index.html` / `style.css`의 `<main>` 구간에 원본 블루보틀 코리아 메인 배너 사진을 넣었습니다. (글자·버튼 영역 `banner-txt-wrap`은 아직 없음, 사진만)
+
+### HTML (`index.html`)
+
+```html
+<main>
+    <img class="banner-img" src="./images/main-banner.jpg" alt="2026 홀리데이 컬렉션">
+</main>
+```
+
+### CSS (`style.css`)
+
+```css
+/* 메인 배너 */
+.banner-img {
+    display: block;
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+```
+
+| 속성 | 역할 |
+|---|---|
+| `display: block` | img는 기본이 inline이라 아래에 작은 틈이 생김 → block으로 없앰 |
+| `width: 100%` | 화면 가로 전체를 채움 |
+| `height: 800px` | 높이 고정 |
+| `object-fit: cover` | 비율을 유지한 채 넘치는 부분을 잘라서 채움 (찌그러짐 방지) |
+
+### 그 밖에 바뀐 것
+
+- `images/main-banner.jpg` 추가 (원본 사이트 PC용 배너, 1680×892)
+- `main`에 있던 확인용 파란 배경 / 빨간 테두리 삭제
+
+### 원본 사이트 참고 (나중에 글자 넣을 때)
+
+- 원본은 사진 위에 `.banner-txt-wrap`을 `position: absolute`로 겹쳐 올림 (부모는 `position: relative`)
+- `.banner-txt-wrap`: `display: flex`, `padding: 128px 112px`, 글자는 왼쪽 아래 배치
+- 제목 40px / 설명 18px / 버튼 290 × 50px 흰 배경, 글자색 흰색
+
+## 2026-11-09 전체 비교 (main 구간 포함)
+
+태그 차이와 있고 없고만 정리했습니다.
+
+### HTML 구간별
+
+| 구간 | index.html | index_solution.html |
+|---|---|---|
+| 구간 감싸기 | `div.section-○○ > div.con` | `div#BBC-0N > div.○○ > div.con` (구간마다 id 있음) |
+| 메인 배너 | `img.banner-img`만 | `div.hero` 안에 글자 칸 `div.hero-copy`(라벨, `h2`×2, `p`, `a`) + `img.hero-image` |
+| 카테고리 / 새로운 컬렉션 | `ul > li > a` 안에 `strong` + `p` + `img` | 제목 `h2` + `span` 있음, 카드는 `div.collection-card` 안에 `img` + `h3` + `p` |
+| 인기 상품 | **없음** | `div.popular` 제목(`h2` + `a`) + 카드 4개(`img` + `p` + `h3`) |
+| 리추얼 배너 / 하사미 | `img.rituals-img`만 | `img.hasami-image` + 글자 칸(`span`, `h2`×2, `p`×2, `a`) |
+| 푸어오버 | 사진 1장 + `h2` + `ul > li`(`h3` + `p`), 제품 사진 없음 | 위: 글자 칸(`span`, `h2`×2, `p`, `a`) + 사진 / 아래: 카드 3개(`img` + `h3` + `p`) |
+| 선물 세트 | 글자 칸(`h2` + `ul > li`) → 사진 순서 | 제목(`h2` + `span`) + 사진 → 글자 칸(`h3`×2, `div.gift-item`×3, `a`) 순서 |
+| 카페 | 사진 1장 + `p` 이름 + `p` 번호(01 02 03) + 아래 `h2` 제목 | 제목(`h2` + `span`) + 카드 3개(`img` + `h3` + `a`) |
+| footer | `<footer>하단</footer>` 있음 | **없음** |
+
+- 목록: index.html은 `ul/li`를 카테고리·푸어오버·선물에 사용 / 정답은 메뉴에만 `ul/li`, 나머지는 `div` 카드
+- 링크 `a`: index.html은 카테고리에만 (`href=""`) / 정답은 메뉴·로고·버튼마다 있음
+- 소제목: index.html은 `strong`, `h2` 위주 / 정답은 카드 제목에 `h3`, 영문 라벨에 `span`
+
+### CSS
+
+| 항목 | style.css | style_solution.css |
+|---|---|---|
+| 기본 초기화 (ul, li, h, p, a, img 등) | 없음 | 있음 |
+| 글꼴 `@font-face` | 없음 | 있음 (Pretendard) |
+| 공통 `.con` 규칙 | 없음 (class만 붙어 있음) | 있음 |
+| `grid` | 헤더에 사용 | 없음 (flex만) |
+| `:hover` | 없음 | 메뉴, 버튼 링크에 있음 |
+| `footer` 스타일 | 있음 | 없음 |
+| 선택자 방식 | 태그마다 class (`.category-title`) | 부모 class + 태그 (`.collection-card h3`) |
+| 정답에만 있는 구간 | | `.hero`, `.popular`, `.hasami`, `.kit-row` / `.kit-card` |
+| 내 코드에만 있는 구간 | `.rituals-img`, `.cafe-info` / `.cafe-num`, `.category-text` | |

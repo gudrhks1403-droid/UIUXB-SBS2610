@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 문제 2 - 해설</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.7; max-width: 720px; margin: 40px auto; padding: 0 20px; }
+        code { background: #f2f2f2; padding: 2px 6px; border-radius: 4px; }
+        pre { background: #272822; color: #f8f8f2; padding: 16px; border-radius: 8px; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ccc; padding: 8px 12px; text-align: left; }
+        th { background: #f7f7f7; }
+        .point { background: #fff8d6; border-left: 4px solid #f0b400; padding: 12px 16px; }
+    </style>
+</head>
+<body>
+    <h1>문제 2 해설 - justify-content / align-items</h1>
+
+    <h2>정답 코드</h2>
+    <pre>.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}</pre>
+
+    <h2>설명</h2>
+    <p>
+        flex에는 정렬 방향이 두 가지 있습니다. 아이템이 놓이는 방향인 <strong>주축</strong>(기본값 row = 가로)과,
+        그와 수직인 <strong>교차축</strong>(세로)입니다.
+    </p>
+    <table>
+        <tr><th>속성</th><th>정렬하는 방향 (기본 row 기준)</th></tr>
+        <tr><td><code>justify-content</code></td><td>주축 → <strong>가로</strong> 정렬</td></tr>
+        <tr><td><code>align-items</code></td><td>교차축 → <strong>세로</strong> 정렬</td></tr>
+    </table>
+    <p>
+        현재 상황에서 <code>justify-content: center</code>와 <code>align-items: center</code>를 함께 사용하면
+        박스가 가로로도 가운데, 세로로도 가운데로 변형되면서
+        회색 영역의 <strong>정가운데</strong>에 놓이는 결과를 가질 수 있습니다.
+    </p>
+
+    <div class="point">
+        <strong>기억하기</strong><br>
+        세로 가운데 정렬이 보이려면 부모에게 <strong>높이</strong>가 있어야 해요. (이 문제에서는 <code>height: 300px</code>)<br>
+        "가로는 justify, 세로는 align" 이 두 줄은 정가운데 정렬의 공식처럼 자주 쓰입니다.
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 문제 1 - 해설</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.7; max-width: 720px; margin: 40px auto; padding: 0 20px; }
+        code { background: #f2f2f2; padding: 2px 6px; border-radius: 4px; }
+        pre { background: #272822; color: #f8f8f2; padding: 16px; border-radius: 8px; }
+        .point { background: #fff8d6; border-left: 4px solid #f0b400; padding: 12px 16px; }
+    </style>
+</head>
+<body>
+    <h1>문제 1 해설 - display: flex</h1>
+
+    <h2>정답 코드</h2>
+    <pre>.container {
+    display: flex;
+}</pre>
+
+    <h2>설명</h2>
+    <p>
+        <code>div</code>는 기본적으로 <strong>block</strong> 요소라서 한 줄을 통째로 차지합니다.
+        그래서 박스 3개가 위에서 아래로 쌓여 있었습니다.
+    </p>
+    <p>
+        현재 상황에서 부모인 <code>.container</code>에 <code>display: flex</code>를 사용하면
+        <code>.container</code>는 <strong>flex 컨테이너</strong>로, 안에 있는 박스들은 <strong>flex 아이템</strong>으로 변형되면서
+        박스 3개가 <strong>가로로 나란히</strong> 놓이는 결과를 가질 수 있습니다.
+    </p>
+
+    <div class="point">
+        <strong>기억하기</strong><br>
+        flex는 <strong>부모</strong>에게 줍니다. 자식(<code>.box</code>)에게 주는 것이 아니에요!<br>
+        flex의 기본 방향은 <code>row</code>(가로)라서 <code>display: flex</code> 한 줄만으로 가로 배치가 됩니다.
+    </div>
+</body>
+</html>
