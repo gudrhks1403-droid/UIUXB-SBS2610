@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.study {
+    background-color: darkkhaki;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s;
+}
+
+.study button {
+    width: 100px;
+    height: 50px;
+    font-size: 12px;
+}
+
+.study button.active {
+    color: blueviolet;
+
+}
+
+.study.active {
+    background-color: pink;   /* 바뀔 네모 배경색 */
+}
